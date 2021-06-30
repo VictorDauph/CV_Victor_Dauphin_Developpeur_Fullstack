@@ -1,0 +1,26 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "CV en ligne de Victor Dauphin, développeur web front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorDauph/Cv_en_ligne.git"
+  },
+  "keywords": [
+    "front-end",
+    "CV"
+  ],
+  "author": "Victor Dauphin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorDauph/Cv_en_ligne/issues"
+  },
+  "homepage": "https://github.com/VictorDauph/Cv_en_ligne#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
