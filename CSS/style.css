@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.body {
-  border: 3px solid red;
-}
-
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10763,6 +10759,18 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 
+*:focus {
+  border: 3px solid #1F016D;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-size: 130%;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "titles";
   color: #1F016D;
@@ -10770,6 +10778,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 #profilePic {
   width: 45%;
+}
+
+progress {
+  height: 15px;
+}
+
+.card-img-top {
+  height: 150px;
+  width: auto;
+  object-fit: scale-down;
+  object-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

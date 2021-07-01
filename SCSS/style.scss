@@ -16,10 +16,24 @@
     src: url("../ressources/fonts/Quicksand-Regular.otf") format("opentype");
 }
 
+// formatage texte
 *
 {
     font-family: "base";
     font-weight: bold;
+}
+*:focus
+{
+    border: 3px solid $primary;
+}
+a
+{
+    text-decoration:none;
+}
+
+strong
+{
+    font-size: 130%;
 }
 
 h1,h2,h3,h4,h5
@@ -28,7 +42,24 @@ h1,h2,h3,h4,h5
     color: $primary;
 }
 
+//gestion photo de profil
+
 #profilePic
 {
     width: 45%;
+}
+
+// style progress bar
+progress
+{
+    height: 15px ;
+}
+
+// dimensionnement images
+.card-img-top
+{
+    height: 150px;
+    width: auto;
+    object-fit:scale-down;
+    object-position: center;
 }
