@@ -1,4 +1,34 @@
-// sass --watch SCSS/style.scss:css/CSS/style.css 
+// sass --watch ./SCSS/style.scss:./CSS/style.css 
+@import "variables_overrides";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./variables_overrides.scss";
 
+
+//polices personnalisées
+@font-face
+{
+    font-family: "titles";
+    src: url("../ressources/fonts/typewcond_regular.otf") format("opentype");
+}
+
+@font-face
+{
+    font-family: "base";
+    src: url("../ressources/fonts/Quicksand-Regular.otf") format("opentype");
+}
+
+*
+{
+    font-family: "base";
+    font-weight: bold;
+}
+
+h1,h2,h3,h4,h5
+{
+    font-family: "titles";
+    color: $primary;
+}
+
+#profilePic
+{
+    width: 45%;
+}
