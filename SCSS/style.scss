@@ -65,3 +65,20 @@ progress
     object-fit:scale-down;
     object-position: center;
 }
+
+//dimensionnement et positionnement icônes
+i
+{
+    position: absolute; bottom: -15px; right: -15px;
+    font-size: 3em;
+}
+
+//mediaqueries pour custom responsive lg
+@media (max-width:992px)
+{
+    i
+    {
+        position: absolute; bottom: -15px; right: 15px;
+        font-size: 2em;
+    }
+}
