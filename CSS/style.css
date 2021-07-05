@@ -10800,6 +10800,28 @@ i {
   font-size: 3em;
 }
 
+.anim {
+  transform: translateY(200%);
+  animation: apparition 1000ms 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes apparition {
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  45% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.animTitle {
+  cursor: pointer;
+}
+
 @media (max-width: 992px) {
   i {
     position: absolute;

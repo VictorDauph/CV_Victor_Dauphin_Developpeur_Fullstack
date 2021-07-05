@@ -73,6 +73,43 @@ i
     font-size: 3em;
 }
 
+
+
+//animations d'apparition: ajouter classe anim aux éléments à faire apparaître
+$dureeApparition:1000ms;
+.anim
+{
+    transform: translateY(200%);
+    animation: apparition $dureeApparition 0s;
+    animation-fill-mode: forwards;
+}
+
+//Animations
+@keyframes apparition
+{
+  0%
+  {
+    transform: translateY(200%);
+    opacity: 0;
+  } 
+  45%
+  {
+    transform: translateY(-5%);
+  }
+  100%
+  {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.animTitle
+{
+    cursor: pointer;
+}
+
 //mediaqueries pour custom responsive lg
 @media (max-width:992px)
 {
