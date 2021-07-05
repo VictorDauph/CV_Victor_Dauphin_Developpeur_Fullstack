@@ -79,7 +79,7 @@ i
 $dureeApparition:1000ms;
 .anim
 {
-    transform: translateY(200%);
+    
     animation: apparition $dureeApparition 0s;
     animation-fill-mode: forwards;
 }

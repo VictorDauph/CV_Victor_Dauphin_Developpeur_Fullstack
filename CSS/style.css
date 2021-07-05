@@ -10801,7 +10801,6 @@ i {
 }
 
 .anim {
-  transform: translateY(200%);
   animation: apparition 1000ms 0s;
   animation-fill-mode: forwards;
 }
