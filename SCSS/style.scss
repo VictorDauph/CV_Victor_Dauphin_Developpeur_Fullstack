@@ -67,12 +67,17 @@ progress
 }
 
 //dimensionnement et positionnement icônes
-i
+.card i
 {
     position: absolute; bottom: -15px; right: -15px;
     font-size: 3em;
 }
 
+.fa-linkedin, .fa-github-square
+{
+    font-size: xx-large;
+    color: $primary;
+}
 
 
 //animations d'apparition: ajouter classe anim aux éléments à faire apparaître

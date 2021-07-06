@@ -10793,11 +10793,16 @@ progress {
   object-position: center;
 }
 
-i {
+.card i {
   position: absolute;
   bottom: -15px;
   right: -15px;
   font-size: 3em;
+}
+
+.fa-linkedin, .fa-github-square {
+  font-size: xx-large;
+  color: #1F016D;
 }
 
 .anim {
