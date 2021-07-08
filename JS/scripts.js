@@ -67,3 +67,18 @@ function displaySection(section,displayed)
     }
 
 }
+
+//enlever les images pour la version pdf
+// Pour supprimer les images mettre removeImage sur true, pour capture en pdf utiliser PDF mage
+const removeImage = true;
+
+const imgsToRemove = document.getElementsByClassName("card-img-top");
+const ArrayToRemove = Object.values(imgsToRemove);
+console.log("ArraytoRemove:",ArrayToRemove)
+
+if (removeImage == true)
+    {
+        ArrayToRemove.forEach(element => {
+            element.classList.add("d-none");
+        });
+    }
