@@ -69,7 +69,7 @@ function displaySection(section,displayed)
 }
 
 //enlever les images pour la version pdf
-// Pour supprimer les images mettre removeImage sur true, pour capture en pdf utiliser PDF mage, l'extension firefox. Version clickable et mise en page, nécessite plusieurs essais pour un bon rendu.
+// Pour supprimer les images mettre removeImage sur true, pour capture en pdf utiliser https://webtopdf.com/, zoom 35%
 const removeImage = false;
 
 const imgsToRemove = document.getElementsByClassName("card-img-top");
