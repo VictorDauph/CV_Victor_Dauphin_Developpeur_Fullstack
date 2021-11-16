@@ -69,7 +69,7 @@ function displaySection(section,displayed)
 }
 
 //enlever les images pour la version pdf
-// Pour supprimer les images mettre removeImage sur true, pour capture en pdf utiliser https://webtopdf.com/, zoom 35%
+// Pour supprimer les images mettre removeImage sur true, pour capture en pdf utiliser https://www.sejda.com/fr/html-to-pdf, zoom 35%
 const removeImage = false;
 
 const imgsToRemove = document.getElementsByClassName("card-img-top");
