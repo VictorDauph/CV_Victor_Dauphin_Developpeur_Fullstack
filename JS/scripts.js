@@ -1,7 +1,7 @@
 console.log("JS activated");
 
 //identification boutons et sections à afficher
-const OCTitle= document.getElementById("OCButton");
+const OCTitle= document.getElementById("OCTitle");
 const OC= document.getElementById("OC");
 const proTitle= document.getElementById("proTitle");
 const pro= document.getElementById("pro");
