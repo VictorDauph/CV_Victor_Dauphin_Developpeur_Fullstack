@@ -1,27 +1,29 @@
 console.log("JS activated");
 
 //identification boutons et sections à afficher
-const OCTitle= document.getElementById("OCTitle");
-const OC= document.getElementById("OC");
+
+const continues= document.getElementById("continue");
+const continueTitle=document.getElementById("continueTitle")
 const proTitle= document.getElementById("proTitle");
 const pro= document.getElementById("pro");
 const formationsTitle= document.getElementById("formationsTitle");
 const formations= document.getElementById("formations");
 
 //variables d'affichage
-let displayedOC = true
 let displayedPro = true
 let displayedFormations = true
+let displayedContinue=true
 
 
-OCTitle.addEventListener("click",selectOC);
+
 proTitle.addEventListener("click",selectPro);
 formationsTitle.addEventListener("click",selectFormations);
+continueTitle.addEventListener("click",selectContinue);
 
-function selectOC()
+
+function selectContinue()
 {
-    displayedOC = displaySection(OC,displayedOC);
-    console.log("displayedOC", displayedOC)
+    displayedContinue = displaySection(continues,displayedContinue);
 }
 
 function selectPro()
@@ -38,10 +40,8 @@ function selectFormations()
 function hideAllSections()
 {
     console.log("hiding");
-    OC.classList.toggle("d-none",true);
     pro.classList.toggle("d-none",true);
     formations.classList.toggle("d-none",true);
-    displayedOC = false
     displayedPro = false
     displayedFormations = false
 }
