@@ -40,6 +40,7 @@ function selectFormations()
 function hideAllSections()
 {
     console.log("hiding");
+    continues.classList.toggle("d-none",true);
     pro.classList.toggle("d-none",true);
     formations.classList.toggle("d-none",true);
     displayedPro = false
