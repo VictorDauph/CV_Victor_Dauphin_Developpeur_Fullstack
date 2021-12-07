@@ -80,6 +80,17 @@ progress
     position: inherit;
 }
 
+//dimensionnement et positionnement drapeaux
+.flag{
+    width: 15%;
+    min-width: 35px ;
+    margin-top: 17px;
+}
+
+.flag-mini{
+    width: 35px;
+}
+
 
 //animations d'apparition: ajouter classe anim aux éléments à faire apparaître
 $dureeApparition:1000ms;
