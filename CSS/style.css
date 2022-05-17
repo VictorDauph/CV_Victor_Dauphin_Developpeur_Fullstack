@@ -10800,6 +10800,14 @@ progress {
   font-size: 3em;
 }
 
+#interest p i {
+  position: relative;
+  bottom: auto;
+  right: auto;
+  font-size: 2em;
+  vertical-align: middle;
+}
+
 .fa-linkedin, .fa-github-square {
   font-size: xx-large;
   color: #1F016D;
