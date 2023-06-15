@@ -9846,6 +9846,9 @@ progress {
     right: 15px;
     font-size: 2em;
   }
+  .miseEnAvant {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
