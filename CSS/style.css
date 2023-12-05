@@ -13015,9 +13015,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@page {
-  width: 210mm;
-}
 @font-face {
   font-family: "titles";
   src: url("../ressources/fonts/typewcond_regular.otf") format("opentype");
