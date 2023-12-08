@@ -2,11 +2,10 @@
 @import "variables_overrides";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
 //polices personnalisées
 @font-face
 {
-    font-family: "titles";
+    font-family: "titles"; 
     src: url("../ressources/fonts/typewcond_regular.otf") format("opentype");
 }
 
@@ -21,6 +20,7 @@
 {
     font-family: "base";
     font-weight: bold;
+    font-size: 0.95em;
 }
 *:focus
 {
@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5
 }
 
 .miseEnAvant{
-    width:75%;
+    width:100%;
 }
 
 //gestion photo de profil
@@ -64,7 +64,7 @@ progress
 // dimensionnement images
 .card-img-top
 {
-    height: 150px;
+    height: 60px;
     width: auto;
     object-fit:scale-down;
     object-position: center;

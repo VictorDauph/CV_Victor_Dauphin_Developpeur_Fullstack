@@ -8,6 +8,8 @@ const proTitle= document.getElementById("proTitle");
 const pro= document.getElementById("pro");
 const formationsTitle= document.getElementById("formationsTitle");
 const formations= document.getElementById("formations");
+const interestTitle= document.getElementById("interestTitle");
+const interest= document.getElementById("interest");
 
 //variables d'affichage
 let displayedPro = true
@@ -19,6 +21,7 @@ let displayedContinue=true
 proTitle.addEventListener("click",selectPro);
 formationsTitle.addEventListener("click",selectFormations);
 continueTitle.addEventListener("click",selectContinue);
+interestTitle.addEventListener("click",selectInterest);
 
 
 function selectContinue()
@@ -29,6 +32,11 @@ function selectContinue()
 function selectPro()
 {
     displayedPro = displaySection(pro,displayedPro);
+}
+
+function selectInterest()
+{
+    displayedInterest = displaySection(interest,displayedInterest);
 }
 
 function selectFormations()
@@ -43,8 +51,10 @@ function hideAllSections()
     continues.classList.toggle("d-none",true);
     pro.classList.toggle("d-none",true);
     formations.classList.toggle("d-none",true);
+    interest.classList.toggle("d-none",true)
     displayedPro = false
     displayedFormations = false
+    displayedInterest=false
 }
 
 function displaySection(section,displayed)
