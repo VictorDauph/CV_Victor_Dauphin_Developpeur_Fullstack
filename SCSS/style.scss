@@ -7,7 +7,7 @@
 {
     font-family: "titles"; 
     src: url("../ressources/fonts/typewcond_regular.otf") format("opentype");
-}
+} 
 
 @font-face
 {
@@ -65,6 +65,14 @@ progress
 .card-img-top
 {
     height: 60px;
+    width: auto;
+    object-fit:scale-down;
+    object-position: center;
+}
+
+.card-img-top-large
+{
+    height: 100px;
     width: auto;
     object-fit:scale-down;
     object-position: center;
