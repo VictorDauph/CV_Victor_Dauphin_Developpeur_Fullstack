@@ -1,10 +1,37 @@
 // sass --watch ./SCSS/style.scss:./CSS/style.css 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./variables_overrides.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 * {
   box-sizing: border-box;
   transition: 0.35s ease;
 }
+
+
+
+.content-container{
+    p, tr{
+        font-size: 0.7rem;
+    }
+}
+
+.custom-table {
+    border: 3px solid #999; /* Couleur secondaire de Bootstrap */
+    border-radius: 0.25rem; /* Arrondir les coins du tableau */
+    margin-bottom: 1rem; /* Espacement en bas du tableau */
+}
+
+.custom-table td {
+    border: 2px solid #999; /* Bordures des cellules plus épaisses */
+    border-radius: 90rem;
+    padding: 0.5rem; /* Réduire le padding pour un tableau moins haut */
+}
+
+/* Si vous voulez enlever le padding des cellules pour rendre le tableau encore plus compact */
+.custom-table td {
+    padding: 0.25rem;
+}
+
 
 .rela-block {
   display: block;
@@ -27,8 +54,8 @@
 #profilePic{
     z-index: 100000;
     position: absolute;
-    right: 5%;
-    top: 12%;
+    right: 15px;
+    top: 70px;
     width: 8%;
 }
 .abs-center {
@@ -48,6 +75,11 @@ body {
   line-height: 28px;
   background: url("http://kingofwallpapers.com/leaves/leaves-016.jpg") right no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+html, body{
+    height: fit-content;  
 }
 
 body:before {
@@ -87,7 +119,8 @@ h3 {
   letter-spacing: 1px;
   font-weight: 600;
   line-height: 28px;
-  color: #000;
+  color: black ;
+  background-color:#ddd ;
 }
 
 .top-bar {
@@ -118,8 +151,21 @@ h3 {
   top: 60px;
   left: 5%;
   width: 350px;
+  height: calc(100% - 60px);
   background-color: #f7e0c1;
   padding: 320px 30px 50px;
+  overflow: auto;
+  a{
+    color: blue;
+  }
+  i{
+    font-size: 0.7em;
+  }
+  .logo-text{
+    color: inherit; /* Utilise la couleur du texte parent */
+    text-decoration: none; /* Enlève le soulignement */
+    cursor: default; /* Enlève le curseur pointer */
+  }
 }
 
 .mugshot {
@@ -146,14 +192,12 @@ h3 {
   height: 100%;
   width: 100%;
   stroke: #000;
-  cursor: pointer;
 }
 
 .logo .logo-text {
   position: absolute;
   top: 60%;
   right: 16%;
-  cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-size: 55px;
   font-weight: 400;
@@ -163,7 +207,6 @@ h3 {
 .social {
   padding-left: 60px;
   margin-bottom: 20px;
-  cursor: pointer;
 }
 
 .social:before {
@@ -176,17 +219,14 @@ h3 {
   background-size: cover !important;
 }
 
-.social.twitter:before {
-  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") center no-repeat;
-}
-
-.social.pinterest:before {
-  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") center no-repeat;
-}
-
 .social.linked-in:before {
   background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
 }
+
+.social.github:before {
+    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-1024.png") center no-repeat;
+  }
+
 
 .side-header {
   font-family: "Open Sans", sans-serif;
