@@ -1,154 +1,257 @@
 // sass --watch ./SCSS/style.scss:./CSS/style.css 
-@import "variables_overrides";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
-//polices personnalisées
-@font-face
-{
-    font-family: "titles"; 
-    src: url("../ressources/fonts/typewcond_regular.otf") format("opentype");
+@import "./variables_overrides.scss";
+* {
+  box-sizing: border-box;
+  transition: 0.35s ease;
 }
 
-@font-face
-{
-    font-family: "base";
-    src: url("../ressources/fonts/Quicksand-Regular.otf") format("opentype");
+.rela-block {
+  display: block;
+  position: relative;
+  margin: auto;
 }
 
-// formatage texte
-*
-{
-    font-family: "base";
-    font-weight: bold;
-    font-size: 0.95em;
-}
-*:focus
-{
-    border: 3px solid $primary;
-}
-a
-{
-    text-decoration:none;
+.rela-inline {
+  display: inline-block;
+  position: relative;
+  margin: auto;
 }
 
-strong
-{
-    font-size: 130%;
+.floated {
+  display: inline-block;
+  position: relative;
+  float: left;
 }
 
-h1,h2,h3,h4,h5
-{
-    font-family: "titles";
-    color: $primary;
+#profilePic{
+    z-index: 100000;
+    position: absolute;
+    right: 5%;
+    top: 12%;
+    width: 8%;
+}
+.abs-center {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  width: auto;
 }
 
-.miseEnAvant{
-    width:100%;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 28px;
+  background: url("http://kingofwallpapers.com/leaves/leaves-016.jpg") right no-repeat;
+  background-size: cover;
 }
 
-//gestion photo de profil
-
-#profilePic
-{
-    object-fit:scale-down;
-    width: auto;
-    height: 150px;
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.92);
 }
 
-// style progress bar
-progress
-{
-    height: 15px ;
+.caps {
+  text-transform: uppercase;
 }
 
-// dimensionnement images
-.card-img-top
-{
-    height: 60px;
-    width: auto;
-    object-fit:scale-down;
-    object-position: center;
+.justified {
+  text-align: justify;
 }
 
-//dimensionnement et positionnement icônes
-.card i
-{
-    position: absolute; bottom: 0px; right: 0px;
-    font-size: 3em;
+p.light {
+  color: #777;
 }
 
-#interest p i{
-
-    position: relative; bottom: auto; right: auto;
-    font-size: 2em;
-    vertical-align: middle;
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #000;
 }
 
-.fa-linkedin, .fa-github-square
-{
-    font-size: xx-large;
-    color: $primary;
-    position: inherit;
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #000;
 }
 
-//dimensionnement et positionnement drapeaux
-.flag{
-    width: 15%;
-    min-width: 35px ;
-    margin-top: 17px;
+.top-bar {
+  height: 220px;
+  background-color: #848484;
+  color: #fff;
 }
 
-.flag-mini{
-    width: 35px;
+.name {
+  position: absolute;
+  width: 100%;
+  left: calc(350px + 5%);
+  height: 120px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 58px;
+  letter-spacing: 8px;
+  font-weight: 100;
+  line-height: 60px;
 }
 
-
-//animations d'apparition: ajouter classe anim aux éléments à faire apparaître
-$dureeApparition:1000ms;
-.anim
-{
-    
-    animation: apparition $dureeApparition 0s;
-    animation-fill-mode: forwards;
+.name div {
+  width: 94%;
 }
 
-//Animations
-@keyframes apparition
-{
-  0%
-  {
-    transform: translateY(200%);
-    opacity: 0;
-  } 
-  45%
-  {
-    transform: translateY(-5%);
+.side-bar {
+  position: absolute;
+  top: 60px;
+  left: 5%;
+  width: 350px;
+  background-color: #f7e0c1;
+  padding: 320px 30px 50px;
+}
+
+.mugshot {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  height: 210px;
+  width: 210px;
+}
+
+.mugshot .logo {
+  margin: -23px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+  width: 250px;
+}
+
+.logo .logo-svg {
+  height: 100%;
+  width: 100%;
+  stroke: #000;
+  cursor: pointer;
+}
+
+.logo .logo-text {
+  position: absolute;
+  top: 60%;
+  right: 16%;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 58.3px;
+}
+
+.social {
+  padding-left: 60px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.social:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  height: 35px;
+  width: 35px;
+  background-size: cover !important;
+}
+
+.social.twitter:before {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") center no-repeat;
+}
+
+.social.pinterest:before {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") center no-repeat;
+}
+
+.social.linked-in:before {
+  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
+}
+
+.side-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 60px auto 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #888;
+}
+
+.list-thing {
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.content-container {
+  margin-right: 0;
+  width: calc(95% - 350px);
+  padding: 25px 40px 50px;
+}
+
+.content-container > * {
+  margin: 0 auto 25px;
+}
+
+.content-container > h3 {
+  margin: 0 auto 5px;
+}
+
+.content-container > p.long-margin {
+  margin: 0 auto 50px;
+}
+
+.title {
+  width: 80%;
+  text-align: center;
+}
+
+.separator {
+  width: 240px;
+  height: 2px;
+  background-color: #999;
+}
+
+.greyed {
+  background-color: #ddd;
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 1150px) {
+  .name {
+    color: #fff;
+    font-size: 38px;
+    letter-spacing: 6px;
+    line-height: 48px;
   }
-  100%
-  {
-    transform: translateY(0);
-  }
 }
 
-
-
-
-.animTitle
-{
-    cursor: pointer;
-}
-
-//mediaqueries pour custom responsive lg
-@media (max-width:992px)
-{
-    i
-    {
-        position: absolute; bottom: -15px; right: 15px;
-        font-size: 2em;
-    }
-
-    .miseEnAvant
-    {
-        width: 100%;
-    }
-}
+/*# sourceMappingURL=style.css.map */
