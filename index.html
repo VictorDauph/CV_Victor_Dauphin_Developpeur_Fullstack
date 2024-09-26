@@ -5,7 +5,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css"> <!-- Bootstrap CSS -->
     <script src="https://kit.fontawesome.com/a3989c0535.js" crossorigin="anonymous"></script>
     <!-- lien fontawesome pour les icônes-->
@@ -13,15 +13,21 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <!--librairie pour générer PDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
   </head>
 
-  <body>
+  <body id="cv-content">
       <img id="profilePic" class="shadow border border-secondary rounded-circle d-block order-sm-last" 
           src="./ressources/images/photo.jpg" alt="Votre photo">
       <div class="rela-block page"></div>
       <div class="rela-block top-bar">
-          <div class="caps name">
-              <div class="abs-center">Victor Dauphin</div>
+          <div class="name">
+              <div class="abs-center caps">Victor Dauphin</div>
           </div>
       </div>
       <div class="side-bar">
@@ -30,7 +36,8 @@
                   <svg viewbox="0 0 80 80" class="rela-block logo-svg">
                       <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke-width="2.5" fill="none" />
                   </svg>
-                  <a href="./ressources/imprimable/Cv_en_ligne-1.pdf" download="VictorDauphin_Developpeur_web"class="logo-text">VD</a>
+                  <!--<a href="./ressources/imprimable/Cv_en_ligne-1.pdf" download="VictorDauphin_Developpeur_web"class="logo-text">VD</a>-->
+                  <p id="pdf-button" class="logo-text">VD</p>
               </div>
           </div>
           <p>Metz</p>
@@ -242,6 +249,9 @@
             <p class="justified">Développer une entreprise du numérique. Manager des développeurs, des designers, et développer un réseau.</p>
       </div>
   </div>
+
+  <!-- Charger le script ici -->
+  <script src="/JS/scripts.js"></script>
   </body>
 
 </html>

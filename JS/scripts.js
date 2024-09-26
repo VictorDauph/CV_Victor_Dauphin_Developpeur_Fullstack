@@ -1,95 +1,38 @@
-console.log("JS activated");
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("JS activated");
 
-//identification boutons et sections à afficher
-
-const continues= document.getElementById("continue");
-const continueTitle=document.getElementById("continueTitle")
-const proTitle= document.getElementById("proTitle");
-const pro= document.getElementById("pro");
-const formationsTitle= document.getElementById("formationsTitle");
-const formations= document.getElementById("formations");
-const interestTitle= document.getElementById("interestTitle");
-const interest= document.getElementById("interest");
-
-//variables d'affichage
-let displayedPro = true
-let displayedFormations = true
-let displayedContinue=true
+    document.getElementById("pdf-button").addEventListener("click", function () {
+        // Faire défiler la fenêtre vers le coin supérieur gauche
+        window.scrollTo(0, 0);
+        var element = document.getElementById("cv-content"); // L'élément contenant ton CV
 
 
+        // Forcer un reflow en manipulant le style
+        element.style.display = 'none'; // Cachez l'élément
+        void element.offsetHeight; // Forcez un reflow
+        element.style.display = ''; // Montrez à nouveau l'élément
+        
+        // Utiliser html2canvas pour obtenir les dimensions de l'élément
+        html2canvas(element, { scale: 2 }).then(function(canvas) { // Augmentez le scale si nécessaire
+            var imgData = canvas.toDataURL('image/jpeg');
+            
+            // Accéder à jsPDF à partir de l'objet window
+            const { jsPDF } = window.jspdf; // Assurez-vous d'accéder correctement à jsPDF
 
-proTitle.addEventListener("click",selectPro);
-formationsTitle.addEventListener("click",selectFormations);
-continueTitle.addEventListener("click",selectContinue);
-interestTitle.addEventListener("click",selectInterest);
+            // Récupérez la largeur et la hauteur de l'élément
+            var imgWidth = canvas.width;
+            var imgHeight = canvas.height;
 
+            // Créez le PDF avec la largeur et la hauteur de l'image
+            var pdf = new jsPDF({
+                unit: 'pt',
+                format: [imgWidth, imgHeight], // Définir la taille selon l'image
+                orientation: 'portrait'
+            });
 
-function selectContinue()
-{
-    displayedContinue = displaySection(continues,displayedContinue);
-}
-
-function selectPro()
-{
-    displayedPro = displaySection(pro,displayedPro);
-}
-
-function selectInterest()
-{
-    displayedInterest = displaySection(interest,displayedInterest);
-}
-
-function selectFormations()
-{
-    displayedFormations = displaySection(formations,displayedFormations);
-    console.log("formations selected");
-}
-
-function hideAllSections()
-{
-    console.log("hiding");
-    continues.classList.toggle("d-none",true);
-    pro.classList.toggle("d-none",true);
-    formations.classList.toggle("d-none",true);
-    interest.classList.toggle("d-none",true)
-    displayedPro = false
-    displayedFormations = false
-    displayedInterest=false
-}
-
-function displaySection(section,displayed)
-{   
-    
-    console.log(section, "affichage avant", displayed);
-
-    if (displayed=== false)
-    {
-    section.classList.toggle("d-none",false);
-    console.log(section, "affichage après", displayed);
-    return true;
-    }
-
-    else if (displayed=== true)
-    {
-        hideAllSections()
-        section.classList.toggle("d-none",true);
-        console.log(section, "affichage après", displayed);
-        return false;
-    }
-
-}
-
-//enlever les images pour la version pdf
-// Pour supprimer les images mettre removeImage sur true, pour capture en pdf utiliser https://www.sodapdf.com
-const removeImage = false;
-
-const imgsToRemove = document.getElementsByClassName("card-img-top");
-const ArrayToRemove = Object.values(imgsToRemove);
-console.log("ArraytoRemove:",ArrayToRemove)
-
-if (removeImage == true)
-    {
-        ArrayToRemove.forEach(element => {
-            element.classList.add("d-none");
+            // Ajoutez l'image en prenant en compte la largeur de la page
+            pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight); // Remplir le PDF avec l'image de l'élément
+            pdf.save('long-page.pdf'); // Sauvegarder le PDF
         });
-    }
+    }); // 100 ms de délai, ajustez selon vos besoins
+});

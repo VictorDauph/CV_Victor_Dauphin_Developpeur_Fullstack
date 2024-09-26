@@ -11854,14 +11854,12 @@ textarea.form-control-lg {
 }
 
 .custom-table {
-  border: 3px solid #999; /* Couleur secondaire de Bootstrap */
-  border-radius: 0.25rem; /* Arrondir les coins du tableau */
   margin-bottom: 1rem; /* Espacement en bas du tableau */
 }
 
 .custom-table td {
-  border: 2px solid #999; /* Bordures des cellules plus épaisses */
-  border-radius: 90rem;
+  border: 3px solid #999; /* Bordures des cellules plus épaisses */
+  border-radius: 0.25rem;
   padding: 0.5rem; /* Réduire le padding pour un tableau moins haut */
 }
 
@@ -11899,10 +11897,11 @@ textarea.form-control-lg {
 .abs-center {
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   text-align: left;
   width: auto;
+  max-width: 50%;
 }
 
 body {
@@ -11918,16 +11917,6 @@ body {
 
 html, body {
   height: fit-content;
-}
-
-body:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.92);
 }
 
 .caps {
@@ -11969,7 +11958,7 @@ h3, .h3 {
 
 .name {
   position: absolute;
-  width: 100%;
+  width: 60%;
   left: calc(350px + 5%);
   height: 120px;
   text-align: center;
@@ -12121,6 +12110,11 @@ h3, .h3 {
   line-height: 28px;
 }
 
+@media print {
+  body {
+    font-size: 4pt; /* Taille de police pour l'impression */
+  }
+}
 
 
 /*# sourceMappingURL=style.css.map */
