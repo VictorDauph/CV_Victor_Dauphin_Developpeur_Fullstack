@@ -1,6 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("JS activated");
+console.log("JS activated");
 
+document.addEventListener("DOMContentLoaded", function() {
+   
     document.getElementById("pdf-button").addEventListener("click", function () {
         // Faire défiler la fenêtre vers le coin supérieur gauche
         window.scrollTo(0, 0);
@@ -34,5 +35,5 @@ document.addEventListener("DOMContentLoaded", function() {
             pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight); // Remplir le PDF avec l'image de l'élément
             pdf.save('long-page.pdf'); // Sauvegarder le PDF
         });
-    }); // 100 ms de délai, ajustez selon vos besoins
+    }); 
 });
