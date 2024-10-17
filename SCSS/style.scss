@@ -75,6 +75,7 @@ body {
   background: url("http://kingofwallpapers.com/leaves/leaves-016.jpg") right no-repeat;
   background-size: cover;
   position: relative;
+  min-width: 1200px;
 }
 
 html, body{
@@ -273,10 +274,4 @@ h3 {
   line-height: 28px;
 }
 
-
-@media print {
-  body {
-    font-size: 4pt; /* Taille de police pour l'impression */
-  }
-}
 /*# sourceMappingURL=style.css.map */

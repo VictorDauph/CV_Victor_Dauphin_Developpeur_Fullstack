@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Ajoutez l'image en prenant en compte la largeur de la page
             pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight); // Remplir le PDF avec l'image de l'élément
-            pdf.save('long-page.pdf'); // Sauvegarder le PDF
+            pdf.save('Victor-Dauphin.pdf'); // Sauvegarder le PDF
         });
     }); 
 });
