@@ -12122,6 +12122,10 @@ h3, .h3 {
   line-height: 28px;
 }
 
+.pdf-mode {
+  min-width: 1500px; /* Fixer à la taille souhaitée pour le PDF */
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

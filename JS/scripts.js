@@ -3,6 +3,8 @@ console.log("JS activated");
 document.addEventListener("DOMContentLoaded", function() {
    
     document.getElementById("pdf-button").addEventListener("click", function () {
+        document.body.classList.add('pdf-mode');
+        
         // Faire défiler la fenêtre vers le coin supérieur gauche
         window.scrollTo(0, 0);
         var element = document.getElementById("cv-content"); // L'élément contenant ton CV
