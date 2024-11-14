@@ -2,284 +2,314 @@
 
 <html lang="fr">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css"> <!-- Bootstrap CSS -->
-    <script src="https://kit.fontawesome.com/a3989c0535.js" crossorigin="anonymous"></script>
-    <!-- lien fontawesome pour les icônes-->
-    <title>Victor Dauphin: Développeur Web fullstack Java Spring et Angular</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css"> <!-- Bootstrap CSS -->
+  <script src="https://kit.fontawesome.com/a3989c0535.js" crossorigin="anonymous"></script>
+  <!-- lien fontawesome pour les icônes-->
+  <title>Victor Dauphin: Développeur Web fullstack Java Spring et Angular</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-    <!--librairie pour générer PDF-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!--librairie pour générer PDF-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 
-  </head>
+</head>
 
-  <body id="cv-content">
-      <img id="profilePic" class="shadow border border-secondary rounded-circle d-block order-sm-last" 
-          src="./ressources/images/photo.jpg" alt="Votre photo">
-      <div class="rela-block page"></div>
-      <div class="rela-block top-bar">
-          <div class="name">
-              <div class="abs-center caps">Victor Dauphin</div>
-          </div>
+<body id="cv-content">
+  <img id="profilePic" class="shadow border border-secondary rounded-circle d-block order-sm-last"
+    src="./ressources/images/photo.jpg" alt="Votre photo">
+  <div class="rela-block page"></div>
+  <div class="rela-block top-bar">
+    <div class="name">
+      <div class="abs-center caps">Victor Dauphin</div>
+    </div>
+  </div>
+  <div class="side-bar">
+    <div class="mugshot">
+      <div class="logo">
+        <svg viewbox="0 0 80 80" class="rela-block logo-svg">
+          <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke-width="2.5" fill="none" />
+        </svg>
+        <!--<a href="./ressources/imprimable/Cv_en_ligne-1.pdf" download="VictorDauphin_Developpeur_web"class="logo-text">VD</a>-->
+        <p id="pdf-button" class="logo-text">VD</p>
       </div>
-      <div class="side-bar">
-          <div class="mugshot">
-              <div class="logo">
-                  <svg viewbox="0 0 80 80" class="rela-block logo-svg">
-                      <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke-width="2.5" fill="none" />
-                  </svg>
-                  <!--<a href="./ressources/imprimable/Cv_en_ligne-1.pdf" download="VictorDauphin_Developpeur_web"class="logo-text">VD</a>-->
-                  <p id="pdf-button" class="logo-text">VD</p>
-              </div>
-          </div>
-          <p>Metz</p>
-          <p>36 ans</p>
-          <p>+336 95 19 99 40</p>
-          <p>victor.dauph@gmail.com</p>
-          <p>permis B</p><br>
-          <p class="rela-block social linked-in"><a href="https://fr.linkedin.com/in/victor-dauphin-83430840">LinkedIn</a></p>
-          <p class="rela-block social github"><a href="https://github.com/VictorDauph">GitHub</a></p>
-          <p class="rela-block caps side-header">Expertise</p>
-          <p class="rela-block list-thing">Spring 
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-solid fa-star-half"></i>
-            <i class="fa-regular fa-star"></i>
-          </p> 
-          <p class="rela-block list-thing">Java
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-solid fa-star-half"></i>
-            <i class="fa-regular fa-star"></i>
-          </p> 
-          <p class="rela-block list-thing">Angular
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-regular fa-star"></i>
-          </p>
-          <p class="rela-block list-thing">Vue
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </p>
-          <p class="rela-block list-thing">React
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </p>
-          <p class="rela-block list-thing">Javascript
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-regular fa-star"></i>
-          </p>
-          <p class="rela-block list-thing">Typescript
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-regular fa-star"></i>
-          </p>
-          <p class="rela-block list-thing">Node/Nestjs
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </p> 
-          <p class="rela-block list-thing">HTML / CSS / SCSS
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-solid fa-star"></i>  
-            <i class="fa-regular fa-star"></i>
-          </p>
-          <p class="rela-block list-thing">NiFi
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-half"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </p>
-          <p class="rela-block list-thing">VBA
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </p>
-          <p class="rela-block caps side-header">Certifications</p>
-          <p class="rela-block list-thing">2024: 2aiconcept Expert Trainer
-          </br>
-            <span class="rela-block list-detail">Validation Number: 3HQvSHlkCrNXIrOSgPoU</span>
-          </p>
-          <p class="rela-block list-thing">2023: AWS Certified Cloud Practitioner </br>
-            <span class="rela-block list-detail">Validation Number: BTL7829KWJFQQJSC</span>
-          </p>
-          <p class="rela-block list-thing">2023: DevSecOps Foundation Certification </br>
-            <span class="rela-block list-detail">Certificate ID: 24510696</span>
-          </p>
-          <p class="rela-block caps side-header">Formation</p>
-          <p class="rela-block list-thing">2022: M2i - POEI Développeur Web full stack Spring/Angular</p>
-          <p class="rela-block list-thing">2021: OpenClassrooms - Développeur Web full stack Node/React</p>
-          <p class="rela-block list-thing">2013: ENSGSI - Ingénieur généraliste</p>
-      </div>
+    </div>
+    <p>Metz</p>
+    <p>36 ans</p>
+    <p>+336 95 19 99 40</p>
+    <p>victor.dauph@gmail.com</p>
+    <p>permis B</p><br>
+    <i class="fa-brands fa-linkedin big-icon blue"></i><a
+      href="https://fr.linkedin.com/in/victor-dauphin-83430840">LinkedIn</a></p>
+    <i class="fa-brands fa-github big-icon"></i><a href="https://github.com/VictorDauph">GitHub</a></p>
+    <p class="rela-block caps side-header">Expertise</p>
+    <p class="rela-block list-thing">Spring
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">Java
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">Angular
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">Vue
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">React
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">Javascript
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">Typescript
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">Node/Nestjs
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">HTML / CSS / SCSS
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">NiFi
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block list-thing">VBA
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </p>
+    <p class="rela-block caps side-header">Certifications</p>
+    <p class="rela-block list-thing">2024: 2aiconcept Expert Trainer
+      </br>
+      <span class="rela-block list-detail">Validation Number: 3HQvSHlkCrNXIrOSgPoU</span>
+    </p>
+    <p class="rela-block list-thing">2023: AWS Certified Cloud Practitioner </br>
+      <span class="rela-block list-detail">Validation Number: BTL7829KWJFQQJSC</span>
+    </p>
+    <p class="rela-block list-thing">2023: DevSecOps Foundation Certification </br>
+      <span class="rela-block list-detail">Certificate ID: 24510696</span>
+    </p>
+    <p class="rela-block caps side-header">Formation</p>
+    <p class="rela-block list-thing">2022: M2i - POEI Développeur Web full stack Spring/Angular</p>
+    <p class="rela-block list-thing">2021: OpenClassrooms - Développeur Web full stack Node/React</p>
+    <p class="rela-block list-thing">2013: ENSGSI - Ingénieur généraliste</p>
+  </div>
 
-      <div class="rela-block content-container">
+  <div class="rela-block content-container">
 
-          
-          <h2 class="rela-block caps title">Développeur Web Fullstack</h2>
-          <div class="rela-block separator"></div>
 
-          <div class="rela-block caps greyed"><h2>Profil</h2></div>
-          <p class="long-margin">Passionné par le développement web, avec un intérêt particulier pour les technologies Java Spring et Angular. J'ai une forte expérience dans la création de flux ETL avec NiFi, ainsi que dans la gestion de données complexes pour des projets industriels. Mon parcours comprend des projets variés, de la construction de tableaux de bord interactifs à la mise en place de systèmes d'API backend.</p>
+    <h2 class="rela-block caps title">Développeur Web Fullstack</h2>
+    <div class="rela-block separator"></div>
 
-          <div class="rela-block caps greyed"><h2>Expériences</h2></div>
-          <!----------------------------------------------------------------------------->
-          <h3>Formateur indépendant</h3>
-          <p class="light">Septembre 2024 - Aujourd'hui</p>
-          <p class="justified">Fort de plusieurs années d’expérience en tant que formateur indépendant, j’ai eu l’opportunité de collaborer avec des organismes de formation de renom, notamment <strong>M2i</strong>, pour lesquels j'ai dispensé divers cours de développement informatique. Certifié 2AIConcept Expert Trainer, je propose notemment, parmi lesquelles une formation approfondie sur les <strong>nouveautés de Java</strong>, ainsi qu’une formation <strong>sur les fondamentaux de SQL</strong>. Ces programmes sont conçus pour offrir aux participants une compréhension à la fois théorique et pratique des technologies, en mettant l’accent sur les compétences directement applicables en entreprise. Mon objectif : rendre chaque session dynamique et enrichissante, pour que les participants puissent rapidement mobiliser leurs nouvelles connaissances dans leurs projets.</p>
+    <div class="rela-block caps greyed">
+      <h2>Profil</h2>
+    </div>
+    <p class="long-margin">Passionné par le développement web, avec un intérêt particulier pour les technologies Java
+      Spring et Angular. J'ai une forte expérience dans la création de flux ETL avec NiFi, ainsi que dans la gestion de
+      données complexes pour des projets industriels. Mon parcours comprend des projets variés, de la construction de
+      tableaux de bord interactifs à la mise en place de systèmes d'API backend.</p>
 
-          <h5>Environnement technique:</h5>
-          <p>
-            Java, MySql 
-          </p>
+    <div class="rela-block caps greyed">
+      <h2>Expériences</h2>
+    </div>
+    <!----------------------------------------------------------------------------->
+    <h3>Formateur indépendant</h3>
+    <p class="light">Septembre 2024 - Aujourd'hui</p>
+    <p class="justified">Fort de plusieurs années d’expérience en tant que formateur indépendant, j’ai eu l’opportunité
+      de collaborer avec des organismes de formation de renom, notamment <strong>M2i</strong>, pour lesquels j'ai
+      dispensé divers cours de développement informatique. Certifié 2AIConcept Expert Trainer, je propose notemment,
+      parmi lesquelles une formation approfondie sur les <strong>nouveautés de Java</strong>, ainsi qu’une formation
+      <strong>sur les fondamentaux de SQL</strong>. Ces programmes sont conçus pour offrir aux participants une
+      compréhension à la fois théorique et pratique des technologies, en mettant l’accent sur les compétences
+      directement applicables en entreprise. Mon objectif : rendre chaque session dynamique et enrichissante, pour que
+      les participants puissent rapidement mobiliser leurs nouvelles connaissances dans leurs projets.
+    </p>
 
-          <h5>Compétences:</h5>
-          <table class="table custom-table">
-            <tr>
-                <td>Création de formations dynamiques</td>
-                <td>Expertise Java</td>
-                <td>Expertise Sql</td>
-            </tr>
-          </table>
-          <h3>Davidson (Développeur web fullstack Vue/Nest)</h3>
-          <p class="light">Juin 2024 - Septembre 2024</p>
-          <p class="justified">Intégré à l'équipe de développement du projet interne <strong>Alfred</strong>, le CRM de Davidson dédié à la gestion commerciale. J'ai principalement travaillé sur la refonte du système de navigation par URL en utilisant le router Vue.js. En plus de cette mission principale, j'ai contribué à la correction de bugs et apporté mon aide à la mise en place des notifications et des todo lists. J'ai également participé aux revues de code dans le cadre du workflow Git.</p>
+    <h5>Environnement technique:</h5>
+    <p>
+      Java, MySql
+    </p>
 
-          <h5>Environnement technique:</h5>
-          <p>
-            Frontend: Vue.js, Backend: Nest.js, Base de données: MySQL, Git pour la gestion du workflow.
-          </p>
+    <h5>Compétences:</h5>
+    <table class="table custom-table">
+      <tr>
+        <td>Création de formations dynamiques</td>
+        <td>Expertise Java</td>
+        <td>Expertise Sql</td>
+      </tr>
+    </table>
+    <h3>Davidson (Développeur web fullstack Vue/Nest)</h3>
+    <p class="light">Juin 2024 - Septembre 2024</p>
+    <p class="justified">Intégré à l'équipe de développement du projet interne <strong>Alfred</strong>, le CRM de
+      Davidson dédié à la gestion commerciale. J'ai principalement travaillé sur la refonte du système de navigation par
+      URL en utilisant le router Vue.js. En plus de cette mission principale, j'ai contribué à la correction de bugs et
+      apporté mon aide à la mise en place des notifications et des todo lists. J'ai également participé aux revues de
+      code dans le cadre du workflow Git.</p>
 
-          <h5>Compétences:</h5>
-          <table class="table custom-table">
-            <tr>
-                <td>Refonte du système de navigation avec Vue Router</td>
-                <td>Debug et résolution d'anomalies front et back</td>
-                <td>Contribution à la mise en place des notifications des tâches</td>
-            </tr>
-            <tr>
-                <td>Participation aux peer reviews pour garantir la qualité du code</td>
-                <td>Collaboration en méthode Agile: Scrum, sprints, revues de code</td>
-            </tr>
-          </table>
-           
-          <!-------------------------------------------------------------------->
-          <h3>Atos - EDF (Développeur NIFI)</h3>
-          <p class="light">Septembre 2023 - Juin 2024</p>
-          <p class="justified">Mise en place de flux Nifi pour la gestion et la transformation des données de projets nucléaires. Réalisation de macros VBA pour extraire et formater des données dans des classeurs Excel. Paramétrage d'Unifier pour tester les flux. Travail en méthode agile (Scrum).</p>
-          <h5>Environnement technique:</h4>
-          <p>
-            Nifi 1.9, Java 1.8, Unifier, VBA
-          </p>
-          <h5>Compétences:</h5>
-          <table class="table custom-table">
-            <tr>
-                <td >création et tests de flux nifi</td>
-                <td >Développement de processeurs en java</td>
-                <td >Création/testing de macros VBA</td>
+    <h5>Environnement technique:</h5>
+    <p>
+      Frontend: Vue.js, Backend: Nest.js, Base de données: MySQL, Git pour la gestion du workflow.
+    </p>
 
-            </tr>
-            <tr>
-              <td >Paramétrage de la base Unifier afin de tester le bon fonctionnement des flux nifi</td>
-              <td>Agilité: framowork safe</td>
-            </tr>
-          </table>
-           
-          <!------------------------------------------------------------------------------->
-          <h3>Atos - CEA (Développeur web frontend Angular)</h3>
-          <p class="light">Mai 2023 - Juin 2023</p>
-          <p class="justified">Développement d'une preuve de concept pour un tableau capable de gérer simultanément 50 lignes avec une dizaine de colonnes. Le tableau comprend une quarantaine de contrôles de plusieurs types : par cellules, sur une ligne complète et multi-lignes. Réalisé sous Angular 15 en utilisant la librairie Reactive Forms. Les données sont transmises depuis une API dotnet C#.</p>
-          <h5>Environnement technique:</h5>
-          <p>
-              Serveur front Angular 15, Librairie Reactive Forms, API REST dotnet, BDD MySQL.
-          </p>
-          <h5>Compétences:</h5>
-          <table class="table custom-table">
-            <tr>
-                <td >Serveur front Angular 15</td>
-                <td >Librairie Reactive Forms</td>
-                <td >API REST dotnet</td>
-                <td >BDD MySQL</td>
-            </tr>
-          </table>
-           
-          <!---------------------------------------------------------------->
-          <h3>Atos - Agirc-Arrco (Développeur web fullstack Java/Angular)</h3>
-          <p class="light">Octobre 2022 - Avril 2023</p>
-          <p class="justified">Développement de nouvelles fonctionnalités, débugage et maintenance d'une application interne de gestion des tâches au sein d'une équipe de développement de l'Agirc-Arrco. Travail en lien avec les équipes de qualification et le client interne de l'Agirc, guidé par les spécifications fonctionnelles.</p>
+    <h5>Compétences:</h5>
+    <table class="table custom-table">
+      <tr>
+        <td>Refonte du système de navigation avec Vue Router</td>
+        <td>Debug et résolution d'anomalies front et back</td>
+        <td>Contribution à la mise en place des notifications des tâches</td>
+      </tr>
+      <tr>
+        <td>Participation aux peer reviews pour garantir la qualité du code</td>
+        <td>Collaboration en méthode Agile: Scrum, sprints, revues de code</td>
+      </tr>
+    </table>
 
-            <h5>Environnement technique:</h5>
-            <p>
-              Serveur front: Angular 14, API REST: Java Spring, ORM: Hibernate (requêtes auto-générées, JPQL, query builder), Tests unitaires: JUnit, Base de données: SQL/PostgreSQL.
-            </p>
+    <!-------------------------------------------------------------------->
+    <h3>Atos - EDF (Développeur NIFI)</h3>
+    <p class="light">Septembre 2023 - Juin 2024</p>
+    <p class="justified">Mise en place de flux Nifi pour la gestion et la transformation des données de projets
+      nucléaires. Réalisation de macros VBA pour extraire et formater des données dans des classeurs Excel. Paramétrage
+      d'Unifier pour tester les flux. Travail en méthode agile (Scrum).</p>
+    <h5>Environnement technique:</h4>
+      <p>
+        Nifi 1.9, Java 1.8, Unifier, VBA
+      </p>
+      <h5>Compétences:</h5>
+      <table class="table custom-table">
+        <tr>
+          <td>création et tests de flux nifi</td>
+          <td>Développement de processeurs en java</td>
+          <td>Création/testing de macros VBA</td>
 
-            <h5>Compétences:</h5>
-            <table class="table custom-table">
-              <tr>
-                  <td>Création de services web: demandes de réaffectations</td>
-                  <td>Création de nouveaux écrans: demandes de réaffectations</td>
-                  <td>Correction d'anomalies front et back remontées par l'équipe de qualification</td>
-              </tr>
-              <tr>
-                  <td>Paramétrage de la base de données à l'aide de scripts SQL</td>
-                  <td>Agilité: Scrum, mêlées, backlogs, sprints, revues de code</td>
-              </tr>
-            </table>
-             
-            <!--------------------------------------------------------------------------->
-            <h3>Impropulsion (Formateur indépendant: communication interpersonnelle)</h3>
-            <p class="light">2018 - 2020</p>
-            <p class="justified">Développement d'une activité d'indépendant, transmission des compétences par la mise en action et utilisation des outils du théâtre.</p>
-             
-            <!--------------------------------------------------------------------------->
-            <h3>Pôle d'intelligence logistique (Chargé de mission Logistique durable)</h3>
-            <p class="light">2017 - 2018</p>
-            <p class="justified">Promouvoir les solutions durables au sein d'un cluster logistique.</p>
-             
-            <!--------------------------------------------------------------------------->
-            
-            <h3>Quipment (Chef de projet Logistique)</h3>
-            <p class="light">2016 - 2017</p>
-            <p class="justified">Gérer des projets logistiques dans le secteur de la recherche médicale.</p>
-             
-            <!--------------------------------------------------------------------------->
-            <h3>Systemics Labs (Co-fondateur)</h3>
-            <p class="light">2013 - 2015</p>
-            <p class="justified">Développer une entreprise du numérique. Manager des développeurs, des designers, et développer un réseau.</p>
-      </div>
+        </tr>
+        <tr>
+          <td>Paramétrage de la base Unifier afin de tester le bon fonctionnement des flux nifi</td>
+          <td>Agilité: framowork safe</td>
+        </tr>
+      </table>
+
+      <!------------------------------------------------------------------------------->
+      <h3>Atos - CEA (Développeur web frontend Angular)</h3>
+      <p class="light">Mai 2023 - Juin 2023</p>
+      <p class="justified">Développement d'une preuve de concept pour un tableau capable de gérer simultanément 50
+        lignes avec une dizaine de colonnes. Le tableau comprend une quarantaine de contrôles de plusieurs types : par
+        cellules, sur une ligne complète et multi-lignes. Réalisé sous Angular 15 en utilisant la librairie Reactive
+        Forms. Les données sont transmises depuis une API dotnet C#.</p>
+      <h5>Environnement technique:</h5>
+      <p>
+        Serveur front Angular 15, Librairie Reactive Forms, API REST dotnet, BDD MySQL.
+      </p>
+      <h5>Compétences:</h5>
+      <table class="table custom-table">
+        <tr>
+          <td>Serveur front Angular 15</td>
+          <td>Librairie Reactive Forms</td>
+          <td>API REST dotnet</td>
+          <td>BDD MySQL</td>
+        </tr>
+      </table>
+
+      <!---------------------------------------------------------------->
+      <h3>Atos - Agirc-Arrco (Développeur web fullstack Java/Angular)</h3>
+      <p class="light">Octobre 2022 - Avril 2023</p>
+      <p class="justified">Développement de nouvelles fonctionnalités, débugage et maintenance d'une application interne
+        de gestion des tâches au sein d'une équipe de développement de l'Agirc-Arrco. Travail en lien avec les équipes
+        de qualification et le client interne de l'Agirc, guidé par les spécifications fonctionnelles.</p>
+
+      <h5>Environnement technique:</h5>
+      <p>
+        Serveur front: Angular 14, API REST: Java Spring, ORM: Hibernate (requêtes auto-générées, JPQL, query builder),
+        Tests unitaires: JUnit, Base de données: SQL/PostgreSQL.
+      </p>
+
+      <h5>Compétences:</h5>
+      <table class="table custom-table">
+        <tr>
+          <td>Création de services web: demandes de réaffectations</td>
+          <td>Création de nouveaux écrans: demandes de réaffectations</td>
+          <td>Correction d'anomalies front et back remontées par l'équipe de qualification</td>
+        </tr>
+        <tr>
+          <td>Paramétrage de la base de données à l'aide de scripts SQL</td>
+          <td>Agilité: Scrum, mêlées, backlogs, sprints, revues de code</td>
+        </tr>
+      </table>
+
+      <!--------------------------------------------------------------------------->
+      <h3>Impropulsion (Formateur indépendant: communication interpersonnelle)</h3>
+      <p class="light">2018 - 2020</p>
+      <p class="justified">Développement d'une activité d'indépendant, transmission des compétences par la mise en
+        action et utilisation des outils du théâtre.</p>
+
+      <!--------------------------------------------------------------------------->
+      <h3>Pôle d'intelligence logistique (Chargé de mission Logistique durable)</h3>
+      <p class="light">2017 - 2018</p>
+      <p class="justified">Promouvoir les solutions durables au sein d'un cluster logistique.</p>
+
+      <!--------------------------------------------------------------------------->
+
+      <h3>Quipment (Chef de projet Logistique)</h3>
+      <p class="light">2016 - 2017</p>
+      <p class="justified">Gérer des projets logistiques dans le secteur de la recherche médicale.</p>
+
+      <!--------------------------------------------------------------------------->
+      <h3>Systemics Labs (Co-fondateur)</h3>
+      <p class="light">2013 - 2015</p>
+      <p class="justified">Développer une entreprise du numérique. Manager des développeurs, des designers, et
+        développer un réseau.</p>
+  </div>
   </div>
 
   <!-- Charger le script ici -->
   <script src="./JS/scripts.js"></script>
-  </body>
+</body>
 
 </html>

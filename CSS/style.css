@@ -11860,18 +11860,22 @@ textarea.form-control-lg {
   transition: 0.35s ease;
 }
 
-.content-container p, .content-container tr {
+.content-container p,
+.content-container tr {
   font-size: 0.7rem;
 }
 
 .custom-table {
-  margin-bottom: 1rem; /* Espacement en bas du tableau */
+  margin-bottom: 1rem;
+  /* Espacement en bas du tableau */
 }
 
 .custom-table td {
-  border: 3px solid #999; /* Bordures des cellules plus épaisses */
+  border: 3px solid #999;
+  /* Bordures des cellules plus épaisses */
   border-radius: 0.25rem;
-  padding: 0.5rem; /* Réduire le padding pour un tableau moins haut */
+  padding: 0.5rem;
+  /* Réduire le padding pour un tableau moins haut */
 }
 
 /* Si vous voulez enlever le padding des cellules pour rendre le tableau encore plus compact */
@@ -11927,7 +11931,8 @@ body {
   min-width: 1200px;
 }
 
-html, body {
+html,
+body {
   height: fit-content;
 }
 
@@ -12002,9 +12007,12 @@ h3, .h3 {
   font-size: 0.7em;
 }
 .side-bar .logo-text {
-  color: inherit; /* Utilise la couleur du texte parent */
-  text-decoration: none; /* Enlève le soulignement */
-  cursor: default; /* Enlève le curseur pointer */
+  color: inherit;
+  /* Utilise la couleur du texte parent */
+  text-decoration: none;
+  /* Enlève le soulignement */
+  cursor: default;
+  /* Enlève le curseur pointer */
 }
 
 .mugshot {
@@ -12058,12 +12066,15 @@ h3, .h3 {
   background-size: cover !important;
 }
 
-.social.linked-in:before {
-  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
+.big-icon {
+  font-size: 3rem !important;
+  position: relative;
+  top: 1rem;
+  margin-right: 1rem;
 }
 
-.social.github:before {
-  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-1024.png") center no-repeat;
+.blue {
+  color: blue;
 }
 
 .side-header {
@@ -12127,7 +12138,8 @@ h3, .h3 {
 }
 
 .pdf-mode {
-  min-width: 1500px; /* Fixer à la taille souhaitée pour le PDF */
+  min-width: 1500px;
+  /* Fixer à la taille souhaitée pour le PDF */
 }
 
 

@@ -9,25 +9,30 @@
 
 
 
-.content-container{
-    p, tr{
-        font-size: 0.7rem;
-    }
+.content-container {
+
+  p,
+  tr {
+    font-size: 0.7rem;
+  }
 }
 
 .custom-table {
-    margin-bottom: 1rem; /* Espacement en bas du tableau */
+  margin-bottom: 1rem;
+  /* Espacement en bas du tableau */
 }
 
 .custom-table td {
-    border: 3px solid #999; /* Bordures des cellules plus épaisses */
-    border-radius: 0.25rem;
-    padding: 0.5rem; /* Réduire le padding pour un tableau moins haut */
+  border: 3px solid #999;
+  /* Bordures des cellules plus épaisses */
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  /* Réduire le padding pour un tableau moins haut */
 }
 
 /* Si vous voulez enlever le padding des cellules pour rendre le tableau encore plus compact */
 .custom-table td {
-    padding: 0.25rem;
+  padding: 0.25rem;
 }
 
 
@@ -49,13 +54,14 @@
   float: left;
 }
 
-#profilePic{
-    z-index: 100000;
-    position: absolute;
-    right: 15px;
-    top: 70px;
-    width: 8%;
+#profilePic {
+  z-index: 100000;
+  position: absolute;
+  right: 15px;
+  top: 70px;
+  width: 8%;
 }
+
 .abs-center {
   position: absolute;
   top: 100%;
@@ -78,8 +84,9 @@ body {
   min-width: 1200px;
 }
 
-html, body{
-    height: fit-content;  
+html,
+body {
+  height: fit-content;
 }
 
 .caps {
@@ -109,8 +116,8 @@ h3 {
   letter-spacing: 1px;
   font-weight: 600;
   line-height: 28px;
-  color: black ;
-  background-color:#ddd ;
+  color: black;
+  background-color: #ddd;
 }
 
 .top-bar {
@@ -145,16 +152,22 @@ h3 {
   background-color: #f7e0c1;
   padding: 320px 30px 50px;
   overflow: auto;
-  a{
+
+  a {
     color: blue;
   }
-  i{
+
+  i {
     font-size: 0.7em;
   }
-  .logo-text{
-    color: inherit; /* Utilise la couleur du texte parent */
-    text-decoration: none; /* Enlève le soulignement */
-    cursor: default; /* Enlève le curseur pointer */
+
+  .logo-text {
+    color: inherit;
+    /* Utilise la couleur du texte parent */
+    text-decoration: none;
+    /* Enlève le soulignement */
+    cursor: default;
+    /* Enlève le curseur pointer */
   }
 }
 
@@ -209,14 +222,16 @@ h3 {
   background-size: cover !important;
 }
 
-.social.linked-in:before {
-  background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") center no-repeat;
+.big-icon {
+  font-size: 3rem !important;
+  position: relative;
+  top: 1rem;
+  margin-right: 1rem;
 }
 
-.social.github:before {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-1024.png") center no-repeat;
-  }
-
+.blue {
+  color: blue;
+}
 
 .side-header {
   font-family: "Open Sans", sans-serif;
@@ -234,7 +249,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-.list-detail{
+.list-detail {
   font-size: 0.5em;
 }
 
@@ -244,15 +259,15 @@ h3 {
   padding: 25px 40px 50px;
 }
 
-.content-container > * {
+.content-container>* {
   margin: 0 auto 25px;
 }
 
-.content-container > h3 {
+.content-container>h3 {
   margin: 0 auto 5px;
 }
 
-.content-container > p.long-margin {
+.content-container>p.long-margin {
   margin: 0 auto 50px;
 }
 
@@ -278,7 +293,9 @@ h3 {
   line-height: 28px;
 }
 
-.pdf-mode{
-  min-width: 1500px; /* Fixer à la taille souhaitée pour le PDF */
+.pdf-mode {
+  min-width: 1500px;
+  /* Fixer à la taille souhaitée pour le PDF */
 }
+
 /*# sourceMappingURL=style.css.map */
