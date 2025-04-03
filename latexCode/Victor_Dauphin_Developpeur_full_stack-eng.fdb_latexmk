@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1743690015.88136 "c:/outils_code/local-repos/CV_Victor_Dauphin_Developpeur_Fullstack/latexCode/Victor_Dauphin_Developpeur_full_stack.tex" "Victor_Dauphin_Developpeur_full_stack.pdf" "Victor_Dauphin_Developpeur_full_stack" 1743690018.81245 0
-  "Victor_Dauphin_Developpeur_full_stack.aux" 1743690018 199 1fdbbfd116ec39a4873d992c0ebeaf6b "pdflatex"
-  "Victor_Dauphin_Developpeur_full_stack.out" 1743690017 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Victor_Dauphin_Developpeur_full_stack.tex" 1743690014 6458 52e6a9463e366490cab1ca927adb33de ""
-  "c:/outils_code/local-repos/CV_Victor_Dauphin_Developpeur_Fullstack/latexCode/Victor_Dauphin_Developpeur_full_stack.tex" 1743690014 6458 52e6a9463e366490cab1ca927adb33de ""
+["pdflatex"] 1743690070.54329 "c:/outils_code/local-repos/CV_Victor_Dauphin_Developpeur_Fullstack/latexCode/Victor_Dauphin_Developpeur_full_stack-eng.tex" "Victor_Dauphin_Developpeur_full_stack-eng.pdf" "Victor_Dauphin_Developpeur_full_stack-eng" 1743690073.49445 0
+  "Victor_Dauphin_Developpeur_full_stack-eng.aux" 1743690073 199 1fdbbfd116ec39a4873d992c0ebeaf6b "pdflatex"
+  "Victor_Dauphin_Developpeur_full_stack-eng.out" 1743690072 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Victor_Dauphin_Developpeur_full_stack-eng.tex" 1743690069 6213 c504f6f13e08272574f8bd6f878f1089 ""
+  "c:/outils_code/local-repos/CV_Victor_Dauphin_Developpeur_Fullstack/latexCode/Victor_Dauphin_Developpeur_full_stack-eng.tex" 1743690069 6213 c504f6f13e08272574f8bd6f878f1089 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1743589598 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1743589598 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1743591005 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -192,8 +192,8 @@
   "c:/texlive/2025/texmf.cnf" 1743601885 713 e69b156964470283e0530f5060668171 ""
   "images/photo.jpg" 1743680728 49002 b9e60e7c1bf2f1579b3c8f473e43d58d ""
   (generated)
-  "Victor_Dauphin_Developpeur_full_stack.aux"
-  "Victor_Dauphin_Developpeur_full_stack.log"
-  "Victor_Dauphin_Developpeur_full_stack.out"
-  "Victor_Dauphin_Developpeur_full_stack.pdf"
+  "Victor_Dauphin_Developpeur_full_stack-eng.aux"
+  "Victor_Dauphin_Developpeur_full_stack-eng.log"
+  "Victor_Dauphin_Developpeur_full_stack-eng.out"
+  "Victor_Dauphin_Developpeur_full_stack-eng.pdf"
   (rewritten before read)
