@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1743605552.76698 "c:/outils_code/local-repos/CV_Victor_Dauphin_Developpeur_Fullstack/latexCode/Victor_Dauphin_Developpeur_full_stack.tex" "Victor_Dauphin_Developpeur_full_stack.pdf" "Victor_Dauphin_Developpeur_full_stack" 1743605555.38442 0
-  "Victor_Dauphin_Developpeur_full_stack.aux" 1743605555 199 1fdbbfd116ec39a4873d992c0ebeaf6b "pdflatex"
-  "Victor_Dauphin_Developpeur_full_stack.out" 1743605554 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Victor_Dauphin_Developpeur_full_stack.tex" 1743605551 5004 c0fdeef0978123585b51435bd35551be ""
-  "c:/outils_code/local-repos/CV_Victor_Dauphin_Developpeur_Fullstack/latexCode/Victor_Dauphin_Developpeur_full_stack.tex" 1743605551 5004 c0fdeef0978123585b51435bd35551be ""
+["pdflatex"] 1743681958.64956 "c:/outils_code/local-repos/CV_Victor_Dauphin_Developpeur_Fullstack/latexCode/Victor_Dauphin_Developpeur_full_stack.tex" "Victor_Dauphin_Developpeur_full_stack.pdf" "Victor_Dauphin_Developpeur_full_stack" 1743681961.66191 0
+  "Victor_Dauphin_Developpeur_full_stack.aux" 1743681961 199 1fdbbfd116ec39a4873d992c0ebeaf6b "pdflatex"
+  "Victor_Dauphin_Developpeur_full_stack.out" 1743681960 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Victor_Dauphin_Developpeur_full_stack.tex" 1743681954 4743 c44b93d9bf425517324e75c68db32e95 ""
+  "c:/outils_code/local-repos/CV_Victor_Dauphin_Developpeur_Fullstack/latexCode/Victor_Dauphin_Developpeur_full_stack.tex" 1743681954 4743 c44b93d9bf425517324e75c68db32e95 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1743589598 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1743589598 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1743591005 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -174,7 +174,6 @@
   "c:/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty" 1743600939 1120 ba535da48caa03bf1fd3f03ea87779f8 ""
   "c:/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex" 1743600939 10931 717eb52299f416934beb8b2b7cd8cee6 ""
   "c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty" 1743601002 48766 87a17a4ef312a39cd43896e34a679a56 ""
-  "c:/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty" 1743601080 32879 f4cfa2226c995da5b04a89ee47abf182 ""
   "c:/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty" 1743601080 7532 d2e1111e17bfebb1607d8ffa779705ec ""
   "c:/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1743601138 1380 971a51b00a14503ddf754cab24c3f209 ""
   "c:/texlive/2025/texmf-dist/tex/latex/url/url.sty" 1743601393 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
@@ -185,7 +184,7 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1743601916 5546851 e7871638e4e57d7ca4525db0eb5a9d2a ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1743602228 3346121 abe1079e20dab639739bdd21a461ee6f ""
   "c:/texlive/2025/texmf.cnf" 1743601885 713 e69b156964470283e0530f5060668171 ""
-  "images/photo.jpg" 1743604926 49002 b9e60e7c1bf2f1579b3c8f473e43d58d ""
+  "images/photo.jpg" 1743680728 49002 b9e60e7c1bf2f1579b3c8f473e43d58d ""
   (generated)
   "Victor_Dauphin_Developpeur_full_stack.aux"
   "Victor_Dauphin_Developpeur_full_stack.log"

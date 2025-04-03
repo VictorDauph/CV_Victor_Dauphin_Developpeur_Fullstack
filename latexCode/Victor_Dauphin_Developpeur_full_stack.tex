@@ -2,7 +2,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
-\usepackage{multicol}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{parskip}
@@ -36,7 +35,6 @@
   }
 }
 
-
 % ----- Mise en forme des titres -----
 \titleformat{\section}{\Large\bfseries\color{bleu}}{}{0em}{}
 \titleformat{\subsection}{\bfseries\color{bleu}}{}{0em}{}
@@ -54,107 +52,102 @@
 \begin{document}
 
 % =================== En-tête ===================
-  \noindent
-  \begin{minipage}[t]{0.72\textwidth}
-    {\LARGE \textcolor{bleu}{\textbf{Victor Dauphin}}}\\\\[0.5em]
-    Développeur Fullstack Java / Angular \\\\
-    Metz • 37 ans • Permis B \\\\
-    \href{mailto:victor.dauph@gmail.com}{victor.dauph@gmail.com} • +33 6 95 19 99 40 \\\\
-    \href{https://github.com/VictorDauph}{GitHub} •
-    \href{https://linkedin.com/in/victor-dauphin-83430840}{LinkedIn}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[t]{0.25\textwidth}
-    \begin{flushright}
-    \raisebox{-2.6cm}{
-      \begin{tikzpicture}
-        \draw[fill=white, draw=bleu, line width=1pt] (0,0) circle (1.51cm);
-        \clip (0,0) circle (1.5cm);
-        \node at (0,0) {\includegraphics[width=3cm]{images/photo.jpg}};
-      \end{tikzpicture}
-      }
-    \end{flushright}
-  \end{minipage}
+\noindent
+\begin{minipage}[t]{0.72\textwidth}
+  {\LARGE \textcolor{bleu}{\textbf{Victor Dauphin}}}\\\\[0.5em]
+  Développeur Fullstack Java / Angular \\\\
+  Metz • 37 ans • Permis B \\\\
+  \href{mailto:victor.dauph@gmail.com}{victor.dauph@gmail.com} • +33 6 95 19 99 40 \\\\
+  \href{https://github.com/VictorDauph}{GitHub} •
+  \href{https://linkedin.com/in/victor-dauphin-83430840}{LinkedIn}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.25\textwidth}
+  \begin{flushright}
+  \raisebox{-2.6cm}{
+    \begin{tikzpicture}
+      \draw[fill=white, draw=bleu, line width=1pt] (0,0) circle (1.51cm);
+      \clip (0,0) circle (1.5cm);
+      \node at (0,0) {\includegraphics[width=3cm]{images/photo.jpg}};
+    \end{tikzpicture}
+    }
+  \end{flushright}
+\end{minipage}
 
 \vspace{1.5em}
 
-% =================== Deux colonnes ===================
-\begin{multicols}{2}
-
-% ========== Colonne gauche ==========
+% =================== Colonnes ===================
+\noindent
+\begin{minipage}[t]{0.3\textwidth} % Colonne gauche
 
 \section*{Compétences}
-\begin{tcolorbox}[cvbox, width=0.45\textwidth]
-    \begin{itemize}[leftmargin=*]
-      \item Java / Spring Boot / Hibernate
-      \item Angular / TypeScript / Reactive Forms
-      \item Node.js / Express / NestJS
-      \item HTML / CSS / SCSS
-      \item Docker / Git / CI/CD
-      \item SQL / PostgreSQL / MongoDB
-      \item NiFi / VBA
-    \end{itemize}
+\begin{tcolorbox}[cvbox, width=\linewidth]
+  \begin{itemize}[leftmargin=*]
+    \item Java / Spring Boot / Hibernate
+    \item Angular / TypeScript / Reactive Forms
+    \item Node.js / Express / NestJS
+    \item HTML / CSS / SCSS
+    \item Docker / Git / CI/CD
+    \item SQL / PostgreSQL / MongoDB
+    \item NiFi / VBA
+  \end{itemize}
 \end{tcolorbox}
 
 \section*{Certifications}
-\begin{tcolorbox}[cvbox, width=0.45 \textwidth]
-    \begin{itemize}[leftmargin=*]
-      \item AWS Cloud Practitioner (2023)
-      \item DevSecOps Foundation (2023)
-      \item 2AIConcept Expert Trainer (2024)
-    \end{itemize}
+\begin{tcolorbox}[cvbox, width=\linewidth]
+  \begin{itemize}[leftmargin=*]
+    \item AWS Cloud Practitioner (2023)
+    \item DevSecOps Foundation (2023)
+    \item 2AIConcept Expert Trainer (2024)
+  \end{itemize}
 \end{tcolorbox}
 
 \section*{Formations}
-\begin{tcolorbox}[cvbox, width=0.45 \textwidth]
-    \begin{itemize}[leftmargin=*]
-      \item M2i \textit{POEI Fullstack Spring/Angular} (2022)
-      \item OpenClassrooms \textit{Fullstack Node/React} (2021)
-      \item ENSGSI \textit{Ingénieur généraliste} (2013)
-    \end{itemize}
+\begin{tcolorbox}[cvbox, width=\linewidth]
+  \begin{itemize}[leftmargin=*]
+    \item M2i \textit{POEI Fullstack Spring/Angular} (2022)
+    \item OpenClassrooms \textit{Fullstack Node/React} (2021)
+    \item ENSGSI \textit{Ingénieur généraliste} (2013)
+  \end{itemize}
 \end{tcolorbox}
 
-\columnbreak
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.68\textwidth} % Colonne droite
 
-% ========== Colonne droite ==========
 \section*{Profil}
-\begin{tcolorbox}[cvbox, width=0.5\textwidth]
-    Passionné par le développement web, j'ai un intérêt particulier pour les stacks Java/Spring et Angular. Je combine rigueur d'ingénieur, esprit d'équipe et goûts pour les interfaces soignées.
+\begin{tcolorbox}[cvbox, width=\linewidth]
+  Passionné par le développement web, j'ai un intérêt particulier pour les stacks Java/Spring et Angular. Je combine rigueur d'ingénieur, esprit d'équipe et goûts pour les interfaces soignées.
 \end{tcolorbox}
 
 \section*{Expériences professionnelles}
+\begin{tcolorbox}[cvbox, width=\linewidth]
+  \subsection*{Formateur CDA \textit{Express / Angular}} \textit{Nov 2024 -- Avr 2025}
+  \begin{itemize}[leftmargin=*]
+    \item Formation intensive axée sur la pratique en équipe.
+    \item Modules : HTML/CSS, JS, Angular, Express, MongoDB, SQL.
+    \item Introduction DevOps : Docker, tests, CI/CD.
+  \end{itemize}
 
-\begin{tcolorbox}[cvbox, width=0.5\textwidth]
-    \subsection*{Formateur CDA \textit{Express / Angular}}
-    \textit{Nov 2024 -- Avr 2025}
-    \begin{itemize}[leftmargin=*]
-      \item Formation intensive axée sur la pratique en équipe.
-      \item Modules : HTML/CSS, JS, Angular, Express, MongoDB, SQL.
-      \item Introduction DevOps : Docker, tests, CI/CD.
-    \end{itemize}
-    
-    \subsection*{Davidson \textit{Vue / Nest}}
-    \textit{Juin 2024 -- Sept 2024}
-    \begin{itemize}[leftmargin=*]
-      \item Refonte navigation Vue Router, débug, peer-reviews.
-      \item Notifications et todo lists du CRM interne.
-    \end{itemize}
-    
-    \subsection*{Atos -- EDF \textit{NiFi / Java / VBA}}
-    \textit{Sept 2023 -- Juin 2024}
-    \begin{itemize}[leftmargin=*]
-      \item Flux NiFi, macros VBA, tests sous Unifier.
-      \item Agile Safe, travail en équipe pluridisciplinaire.
-    \end{itemize}
-                                                                
-    \subsection*{Atos -- CEA / Agirc-Arrco \textit{Angular / Java}}
-        \textit{Mai 2023 -- Avril 2023}
-        \begin{itemize}[leftmargin=*]
-        \item Front Angular 14/15, back Java Spring.
-        \item Outils : PostgreSQL, Hibernate, JUnit.
-        \end{itemize}
+  \subsection*{Davidson \textit{Vue / Nest}} \textit{Juin 2024 -- Sept 2024}
+  \begin{itemize}[leftmargin=*]
+    \item Refonte navigation Vue Router, débug, peer-reviews.
+    \item Notifications et todo lists du CRM interne.
+  \end{itemize}
+
+  \subsection*{Atos -- EDF \textit{NiFi / Java / VBA}} \textit{Sept 2023 -- Juin 2024}
+  \begin{itemize}[leftmargin=*]
+    \item Flux NiFi, macros VBA, tests sous Unifier.
+    \item Agile Safe, travail en équipe pluridisciplinaire.
+  \end{itemize}
+
+  \subsection*{Atos -- CEA / Agirc-Arrco \textit{Angular / Java}} \textit{Mai 2023 -- Avril 2023}
+  \begin{itemize}[leftmargin=*]
+    \item Front Angular 14/15, back Java Spring.
+    \item Outils : PostgreSQL, Hibernate, JUnit.
+  \end{itemize}
 \end{tcolorbox}
 
-\end{multicols}
+\end{minipage}
 
 \end{document}
