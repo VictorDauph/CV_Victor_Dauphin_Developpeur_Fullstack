@@ -16,6 +16,8 @@
 \newcommand{\starfull}{\textcolor{bleu}{\ding{72}}}
 \newcommand{\starempty}{\textcolor{bleu}{\ding{73}}}
 \newcommand{\starhalf}{\textcolor{bleu}{\ding{74}}}
+\newcommand{\cvtext}{\fontsize{8}{10}\selectfont}
+\newcommand{\cvtextsmall}{\fontsize{7}{9}\selectfont}
 \tcbset{
   cvbox/.style={
     colframe=bleu,
@@ -104,7 +106,14 @@
   I combine engineering rigor, team spirit, and a passion for clean user interfaces. \\
 
 \section*{Professional Experience}
-\begin{tcolorbox}[cvbox, width=\linewidth]
+  \begin{tcolorbox}[cvbox, width=\linewidth,fontupper=\cvtext]
+  \subsection*{Freelance Developer -- Arterrien \textit{PHP / Dolibarr}} \textit{Apr 2025 -- Jun 2025}
+  \begin{itemize}[leftmargin=*]
+  \item Continuous improvement of a custom ERP module based on Dolibarr.
+  \item Integration of PHPStan (level 4) with custom stubs for the Dolibarr context.
+  \item Setup of a Dockerized CI/CD runner (Google Cloud VM + GitLab).
+  \item Implementation of unit tests with PHPUnit.
+  \end{itemize}
   \subsection*{Trainer CDA \textit{Express / Angular}} \textit{Nov 2024 -- Apr 2025}
   \begin{itemize}[leftmargin=*]
     \item Intensive training for job seekers.
@@ -132,7 +141,7 @@
 \end{tcolorbox}
 
 \section*{Other Professional Experience}
-\begin{tcolorbox}[cvbox, width=\linewidth]
+\begin{tcolorbox}[cvbox, width=\linewidth,fontupper=\cvtextsmall]
   \begin{itemize}[leftmargin=*]
     \item \textbf{Freelance Trainer} – Interpersonal Communication (2018–2020)  
     Led dynamic training sessions based on improvisational theater.
