@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.2)  28 MAY 2025 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.2)  3 MAR 2026 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -649,15 +649,15 @@ LaTeX Font Info:    ... okay on input line 48.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(34.14322pt, 529.22144pt, 34.14322pt)
-* v-part:(T,H,B)=(34.14322pt, 776.7604pt, 34.14322pt)
+* h-part:(L,W,R)=(22.76228pt, 551.9833pt, 22.76228pt)
+* v-part:(T,H,B)=(22.76228pt, 799.52228pt, 22.76228pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=529.22144pt
-* \textheight=776.7604pt
-* \oddsidemargin=-38.12677pt
-* \evensidemargin=-38.12677pt
-* \topmargin=-75.12677pt
+* \textwidth=551.9833pt
+* \textheight=799.52228pt
+* \oddsidemargin=-49.5077pt
+* \evensidemargin=-49.5077pt
+* \topmargin=-86.5077pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -711,72 +711,42 @@ File: images/photo.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/photo.jpg  used on input line 67.
 (pdftex.def)             Requested size: 85.35826pt x 82.06079pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 83--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-[]\T1/cmr/m/n/10 AWS Cloud Prac-ti-tioner
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-[]\T1/cmr/m/n/10 DevSecOps Foun-da-tion
- []
-
-
-Underfull \hbox (badness 2134) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 []\T1/cmr/m/n/10 2AIConcept Ex-pert Trainer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 []\T1/cmr/m/n/10 M2i \T1/cmr/m/it/10 POEI Full-stack
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 []\T1/cmr/m/n/10 OpenClassrooms \T1/cmr/m/it/10 Full-stack
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 []\T1/cmr/m/n/10 ENSGSI \T1/cmr/m/it/10 Gen-eral En-gi-neer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
+Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
 
@@ -793,15 +763,15 @@ Package rerunfilecheck Info: File `Victor_Dauphin_Developpeur_full_stack-eng.out
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28627 strings out of 473190
- 573348 string characters out of 5719980
- 1018711 words of memory out of 5000000
- 51411 multiletter control sequences out of 15000+600000
- 569543 words of font info for 53 fonts, out of 8000000 for 9000
+ 28629 strings out of 473190
+ 573370 string characters out of 5719980
+ 1020702 words of memory out of 5000000
+ 51412 multiletter control sequences out of 15000+600000
+ 570319 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,10n,98p,1307b,984s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Victor_Dauphin_Developpeur_full_stack-eng.pdf (1 page, 294571 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on Victor_Dauphin_Developpeur_full_stack-eng.pdf (1 page, 318655 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
