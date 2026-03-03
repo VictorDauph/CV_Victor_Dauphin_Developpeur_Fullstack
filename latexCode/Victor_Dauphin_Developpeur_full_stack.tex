@@ -2,7 +2,7 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[left=1.2cm,right=1.2cm,top=1.2cm,bottom=1.2cm]{geometry}
+\usepackage[left=0.8cm,right=0.8cm,top=0.8cm,bottom=0.8cm]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{parskip}
@@ -32,8 +32,8 @@
     enhanced
   }
 }
-\titleformat{\section}{\Large\bfseries\color{bleu}}{}{0em}{}
-\titleformat{\subsection}{\bfseries\color{bleu}}{}{0em}{}
+\titleformat{\section}{\Large\bfseries\color{bleu}}{}{0em}{}[\vspace{-0.5em}]
+\titleformat{\subsection}{\bfseries\color{bleu}}{}{0em}{}[\vspace{-0.3em}]
 \pagestyle{empty}
 \hypersetup{
   pdfauthor={Victor Dauphin},
@@ -49,8 +49,8 @@
 \begin{document}
 \noindent
 \begin{minipage}[t]{0.72\textwidth}
+  {\LARGE \textcolor{bleu}{\textbf{Technical Mentor - Fullstack Java / Angular}}}\\[0.5em]
   {\LARGE \textcolor{bleu}{\textbf{Victor Dauphin}}}\\[0.5em]
-  Développeur Fullstack Java / Angular \\
   Metz • 37 ans • Permis B \\
   \href{mailto:victor.dauph@gmail.com}{victor.dauph@gmail.com} • +33 6 95 19 99 40 \\
   \href{https://github.com/VictorDauph}{GitHub} •
@@ -68,20 +68,41 @@
     }
   \end{flushright}
 \end{minipage}
-\vspace{1.5em}
+\vspace{0.8em}
 \noindent
 \begin{minipage}[t]{0.3\textwidth}
   \section*{Compétences}
   \begin{tcolorbox}[cvbox, width=\linewidth]
-    \begin{itemize}[leftmargin=*]
-      \item Java / Spring Boot / Hibernate \\ \hfill \textcolor{bleu}{\starfull\starfull\starfull\starfull\starempty} \\
-      \item Angular / TypeScript / Reactive Forms \\ \hfill \textcolor{bleu}{\starfull\starfull\starfull\starfull\starempty} \\
-      \item Node.js / Express / NestJS \\ \hfill \textcolor{bleu}{\starfull\starfull\starfull\starempty\starempty} \\
-      \item HTML / CSS / SCSS \\ \hfill \textcolor{bleu}{\starfull\starfull\starfull\starfull\starempty} \\
-      \item Docker / Git / CI/CD \\ \hfill \textcolor{bleu}{\starfull\starfull\starfull\starempty\starempty} \\
-      \item SQL / PostgreSQL / MongoDB \\ \hfill \textcolor{bleu}{\starfull\starfull\starfull\starfull\starempty} \\
-      \item NiFi / VBA \\ \hfill \textcolor{bleu}{\starfull\starfull\starempty\starempty\starempty} \\
-    \end{itemize}
+      \subsection*{Stack Principale}
+      {\normalsize
+      Java / Spring Boot \\
+      Angular / Typescript \\
+      PostgreSQL
+      } \\
+      \subsection*{Technologies Complémentaires}
+      {\normalsize
+      Node.js / Express / NestJS \\
+      Vue.js \\
+      MongoDB \\
+      NiFi \\
+      PHP / Dolibarr
+      } \\
+      \subsection*{Devops \& Quality}
+      {\normalsize
+      Docker \\
+      Gitlab CI \\
+      Tests unitaires : JUnit \\
+      SonarQube / ESLint
+      } \\
+      \subsection*{Bonnes pratiques}
+      {\normalsize
+      Clean Code \\
+      SOLID \\
+      CI/CD \\
+      OWASP \\
+      WCAG \\
+      Git workflow
+      }
   \end{tcolorbox}
   \section*{Certifications}
   \begin{tcolorbox}[cvbox, width=\linewidth]
@@ -91,7 +112,7 @@
       \item 2AIConcept Expert Trainer (2024)
     \end{itemize}
   \end{tcolorbox}
-  \section*{Formations}
+  \section*{Diplômes}
   \begin{tcolorbox}[cvbox, width=\linewidth]
     \begin{itemize}[leftmargin=*]
       \item M2i \textit{POEI Fullstack Spring/Angular} (2022)
@@ -103,10 +124,19 @@
 \hfill
 \begin{minipage}[t]{0.68\textwidth}
 \section*{Profil}
-  Passionné par le développement web, j'ai un intérêt particulier pour les stacks Java/Spring et Angular.
-  Je combine rigueur d'ingénieur, esprit d'équipe et goût pour les interfaces soignées. \\
+  Développeur Fullstack Java / Angular avec 4 ans d’expérience en environnement entreprise.
+Je conçois des applications robustes en mettant l’accent sur la qualité du code, le CI/CD et les bonnes pratiques d’ingénierie.
+J’accompagne également les équipes dans la structuration des projets et la montée en compétence technique.\\
 \section*{Expériences professionnelles}
 \begin{tcolorbox}[cvbox, width=\linewidth, fontupper=\cvtext]
+    \subsection*{Formateur en développement Web -- freelance} \textit{Oct 2024 -- Aujourd'hui}
+    \begin{itemize}[leftmargin=*]
+      \item Les nouveautés de Java (v6 à v21).
+      \item HTML et CSS modernes
+      \item Angular : architecture, composants, services, RxJS, Reactive Forms.
+      \item Initiation SQL/PostgreSQL.
+      \item PL/SQL: procédures stockées, fonctions, triggers dans une base de données Oracle.
+    \end{itemize}
     \subsection*{Développeur freelance -- Arterrien \textit{PHP / Dolibarr}} \textit{Avr 2025 -- Juin 2025}
     \begin{itemize}[leftmargin=*]
       \item Maintenance évolutive d’un module ERP basé sur Dolibarr.
