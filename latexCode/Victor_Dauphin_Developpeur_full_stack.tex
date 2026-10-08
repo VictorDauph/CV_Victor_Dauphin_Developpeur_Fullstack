@@ -1,4 +1,3 @@
-
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -13,12 +12,14 @@
 \usepackage{xcolor}
 \usepackage[most]{tcolorbox}
 \usepackage{pifont}
+
 \definecolor{bleu}{HTML}{013c63}
 \newcommand{\starfull}{\textcolor{bleu}{\ding{72}}}
 \newcommand{\starempty}{\textcolor{bleu}{\ding{73}}}
 \newcommand{\starhalf}{\textcolor{bleu}{\ding{74}}}
-\newcommand{\cvtext}{\fontsize{8}{10}\selectfont}
+\newcommand{\cvtext}{\fontsize{10}{12}\selectfont}
 \newcommand{\cvtextsmall}{\fontsize{7}{9}\selectfont}
+
 \tcbset{
   cvbox/.style={
     colframe=bleu,
@@ -32,12 +33,14 @@
     enhanced
   }
 }
+
 \titleformat{\section}{\Large\bfseries\color{bleu}}{}{0em}{}[\vspace{-0.5em}]
 \titleformat{\subsection}{\bfseries\color{bleu}}{}{0em}{}[\vspace{-0.3em}]
 \pagestyle{empty}
+
 \hypersetup{
   pdfauthor={Victor Dauphin},
-  pdftitle={CV Victor Dauphin},
+  pdftitle={CV Victor Dauphin - Développeur Fullstack Java / Angular},
   pdfsubject={CV},
   pdfproducer={LaTeX},
   pdfcreator={pdflatex},
@@ -46,20 +49,22 @@
   linkcolor=bleu,
   citecolor=bleu
 }
+
 \begin{document}
 \noindent
-\begin{minipage}[t]{0.72\textwidth}
-  {\LARGE \textcolor{bleu}{\textbf{Technical Mentor - Développeur Fullstack Java / Angular}}}\\[0.5em]
-  {\LARGE \textcolor{bleu}{\textbf{Victor Dauphin}}}\\[0.5em]
-  Metz • 37 ans • Permis B \\
-  \href{mailto:victor.dauph@gmail.com}{victor.dauph@gmail.com} • +33 6 95 19 99 40 \\
-  \href{https://github.com/VictorDauph}{GitHub} •
-  \href{https://linkedin.com/in/victor-dauphin-83430840}{LinkedIn}\\
+\begin{minipage}[t]{0.72\textwidth}\raggedright
+  {\LARGE \textcolor{bleu}{\textbf{Victor Dauphin}}}\\[0.3em]
+  {\Large \textcolor{bleu}{\textbf{Développeur Fullstack Java / Spring Boot / Angular}}}\\[0.5em]
+  Metz / Nancy / Strasbourg • Mobilité Luxembourg \& Grand Est \\
+  Permis B \\
+  \href{mailto:victor.dauph@gmail.com}{victor.dauph@gmail.com} \\
+  +33 6 95 19 99 40 \\
+  \href{https://github.com/VictorDauph}{GitHub} • \href{https://linkedin.com/in/victor-dauphin-83430840}{LinkedIn}\\
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.25\textwidth}
   \begin{flushright}
-  \raisebox{-2.6cm}{
+  \raisebox{-2.4cm}{
     \begin{tikzpicture}
       \draw[fill=white, draw=bleu, line width=1pt] (0,0) circle (1.51cm);
       \clip (0,0) circle (1.5cm);
@@ -68,6 +73,7 @@
     }
   \end{flushright}
 \end{minipage}
+
 \vspace{0.8em}
 \noindent
 \begin{minipage}[t]{0.3\textwidth}
@@ -75,35 +81,27 @@
   \begin{tcolorbox}[cvbox, width=\linewidth]
       \subsection*{Stack Principale}
       {\normalsize
-      Java / Spring Boot \\
-      Angular / Typescript \\
-      PostgreSQL
-      } \\
-      \subsection*{Technologies Complémentaires}
+      Java (v6 à v21) / Spring Boot \\
+      Angular / TypeScript \\
+      PostgreSQL / REST APIs
+      } \\[0.5em]
+      
+      \subsection*{DevOps \& Qualité}
       {\normalsize
-      Node.js / Express / NestJS \\
+      Docker / GitLab CI \\
+      JUnit / SonarQube / ESLint \\
+      Clean Code / SOLID / CI/CD
+      } \\[0.5em]
+
+      \subsection*{Autres écosystèmes}
+      {\normalsize
+      Node.js (Express / NestJS) \\
       Vue.js \\
-      MongoDB \\
-      NiFi \\
-      PHP / Dolibarr
-      } \\
-      \subsection*{Devops \& Quality}
-      {\normalsize
-      Docker \\
-      Gitlab CI \\
-      Tests unitaires : JUnit \\
-      SonarQube / ESLint
-      } \\
-      \subsection*{Bonnes pratiques}
-      {\normalsize
-      Clean Code \\
-      SOLID \\
-      CI/CD \\
-      OWASP \\
-      WCAG \\
-      Git workflow
+      MongoDB / PL/SQL (Oracle) \\
+      Apache NiFi
       }
   \end{tcolorbox}
+
   \section*{Certifications}
   \begin{tcolorbox}[cvbox, width=\linewidth]
     \begin{itemize}[leftmargin=*]
@@ -112,6 +110,7 @@
       \item 2AIConcept Expert Trainer (2024)
     \end{itemize}
   \end{tcolorbox}
+
   \section*{Diplômes}
   \begin{tcolorbox}[cvbox, width=\linewidth]
     \begin{itemize}[leftmargin=*]
@@ -124,68 +123,61 @@
 \hfill
 \begin{minipage}[t]{0.68\textwidth}
 \section*{Profil}
-  Développeur Fullstack Java / Angular avec 4 ans d’expérience en environnement entreprise.
-Je conçois des applications robustes en mettant l’accent sur la qualité du code, le CI/CD et les bonnes pratiques d’ingénierie.
-J’accompagne également les équipes dans la structuration des projets et la montée en compétence technique.\\
+Ingénieur généraliste (ENSGSI) et Développeur Fullstack fort de 5 ans d'expérience en environnement grand compte (Atos, EDF, Agirc-Arrco). Spécialiste Java / Spring Boot et Angular, avec une double compétence reconnue en formation technique et en qualité logicielle (CI/CD, Clean Code, Tests). Disponible immédiatement.
+\vspace{0.8em}
+
 \section*{Expériences professionnelles}
 \begin{tcolorbox}[cvbox, width=\linewidth, fontupper=\cvtext]
-    \subsection*{Formateur en développement Web et développeur -- freelance} \textit{Oct 2024 -- Aujourd'hui}
+    \subsection*{--- INGÉNIERIE SOFTWARE \& DÉVELOPPEMENT ---}
+    \vspace{0.3em}
+
+    \textcolor{bleu}{\textbf{Développeur Fullstack Java / Angular}} \hfill \textit{Octobre 2022 -- Juin 2023}\\
+    \textit{Atos (Grands comptes : Agirc-Arrco / CEA)}
     \begin{itemize}[leftmargin=*]
-      \item Formation: Les nouveautés de Java (v6 à v21).
-      \item Formtion: HTML et CSS modernes
-      \item Formation: Angular : architecture, composants, services, RxJS, Reactive Forms.
-      \item Formation: Initiation SQL/PostgreSQL.
-      \item Formation: PL/SQL: procédures stockées, fonctions, triggers dans une base de données Oracle.
-      \item Développement: site vitrine associatif sous wordpress (la boîte à recup)
-      \item Développment: Développement de features et debug d'une application comptable (Clémentine)
+      \item Architecture et développement d'applications web : frontend Angular connecté à des APIs REST Spring Boot.
+      \item Conception des modèles de données et requêtage sous PostgreSQL.
+      \item Implémentation des tests unitaires (JUnit) et intégration dans le cycle de livraison Agile (Scrum).
     \end{itemize}
-    \subsection*{Développeur freelance -- Arterrien \textit{PHP / Dolibarr}} \textit{Avr 2025 -- Juin 2025}
+    \vspace{0.8em}
+
+    \textcolor{bleu}{\textbf{Développeur Java / Intégration de flux}} \hfill \textit{Septembre 2023 -- Juin 2024}\\
+    \textit{Atos (Client : EDF) -- NiFi / Java}
     \begin{itemize}[leftmargin=*]
-      \item Maintenance évolutive d’un module ERP basé sur Dolibarr.
-      \item Mise en place de PHPStan (niveau 4) avec stubs personnalisés pour le contexte Dolibarr.
-      \item Création d’un runner CI/CD Dockerisé (Google Cloud VM + GitLab).
-      \item Implémentation de tests unitaires avec PHPUnit.
+      \item Conception et développement de processeurs personnalisés en Java pour Apache NiFi.
+      \item Sécurisation et automatisation des flux de données inter-applicatifs.
     \end{itemize}
-    \subsection*{Formateur CDA \textit{Express / Angular}} \textit{Nov 2024 -- Avr 2025}
+    \vspace{0.8em}
+
+    \textcolor{bleu}{\textbf{Développeur Fullstack (Vue.js / NestJS)}} \hfill \textit{Juin 2024 -- Septembre 2024}\\
+    \textit{Davidson}
     \begin{itemize}[leftmargin=*]
-      \item Formation intensive pour demandeurs d’emploi.
-      \item Projets pratiques : Angular, Express, MongoDB, SQL.
-      \item Docker, Git, CI/CD, tests automatisés.
+      \item Refonte d'architecture frontend (Vue Router, modules todo/notifications) et revues de code (Peer Review).
     \end{itemize}
-    \subsection*{Développeur Fullstack -- Davidson \textit{Vue / NestJS}} \textit{Juin 2024 -- Sept 2024}
+
+    \vspace{0.4em}
+    \subsection*{--- FORMATION TECHNIQUE \& PRESTATIONS ---}
+    \vspace{0.3em}
+
+    \textcolor{bleu}{\textbf{Formateur Tech \& Mentor Fullstack}} \hfill \textit{Octobre 2024 -- Présent}\\
+    \textit{Freelance \& Organismes de formation}
     \begin{itemize}[leftmargin=*]
-      \item Refonte du Vue Router, mise en place des modules todo/notifications.
-      \item Peer reviews, documentation, mise en production.
+      \item \textbf{Java :} Animation de formations sur les fonctionnalités avancées de Java (v6 à v21).
+      \item \textbf{Angular \& Web :} Architecture modulaire, composants, services, RxJS, Reactive Forms.
+      \item \textbf{Bases de données \& DevOps :} SQL/PostgreSQL, PL/SQL Oracle (procédures, triggers), Docker, Git, CI/CD et tests automatisés (CDA).
     \end{itemize}
-    \subsection*{Développeur Nifi / Java -- Atos / EDF \textit{NiFi / Java / VBA}} \textit{Sept 2023 -- Juin 2024}
+    \vspace{0.8em}
+
+    \textcolor{bleu}{\textbf{Développeur Freelance}} \hfill \textit{Avril 2025 -- Juin 2025}\\
+    \textit{Arterrien \& Projets indépendants}
     \begin{itemize}[leftmargin=*]
-      \item Conception et développement de flux de données avec Apache NiFi.
-      \item Création d’un processeur NiFi personnalisé en Java pour répondre à des besoins métiers spécifiques.
-      \item Automatisation de tâches avec des macros Excel (VBA) et rédaction de tests avec Unifier.
-    \end{itemize}
-    \subsection*{Développeur Fullstack -- Atos /  Agirc-Arrco / CEA \textit{Angular / Java SpringBoot}} \textit{Octobre 2022 -- Juin 2023}
-    \begin{itemize}[leftmargin=*]
-      \item Développement d’interfaces utilisateurs en Angular, intégrées à des APIs REST.
-      \item Conception de services backend avec Spring Boot et gestion des données via PostgreSQL.
-      \item Rédaction de tests unitaires avec JUnit pour garantir la fiabilité du code.
-      \item Implication dans tout le cycle projet : analyse, développement, tests, et livraison en environnement agile.
+      \item Maintenance d'un module ERP (PHP/Dolibarr), intégration de PHPStan (niveau 4), runner CI/CD Dockerisé sur GCP et tests PHPUnit.
+      \item Développements spécifiques et intégrations d'applications web (Clémentine, La Boîte à Récup).
     \end{itemize}
 \end{tcolorbox}
-\section*{Autres expériences professionnelles}
-\begin{tcolorbox}[cvbox, width=\linewidth, fontupper=\cvtextsmall]
-  \begin{itemize}[leftmargin=*]
-    \item \textbf{Formateur indépendant} – Communication interpersonnelle (2018–2020)  
-    Animation de formations dynamiques basées sur le théâtre d’improvisation.
 
-    \item \textbf{Chargé de mission} – Logistique durable (2017–2018)  
-    Promotion de solutions écoresponsables dans un cluster logistique.
-
-    \item \textbf{Chef de projet} – Logistique médicale (2016–2017)  
-    Coordination d’équipes et gestion de flux pour la recherche clinique.
-
-    \item \textbf{Co-fondateur} – Startup numérique (2013–2015)  
-    Développement produit, management d’équipe, stratégie commerciale.
-  \end{itemize}
+\section*{Autres expériences}
+\begin{tcolorbox}[cvbox, width=\linewidth, fontupper=\cvtext]
+  \textbf{2013 -- 2020 (7 ans) :} Parcours transverse en gestion de projet logistique (médicale et durable), entrepreneuriat (co-fondateur startup) et animation de formations en communication interpersonnelle.
 \end{tcolorbox}
 
 \end{minipage}

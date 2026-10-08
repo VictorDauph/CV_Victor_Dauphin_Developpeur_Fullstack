@@ -12,12 +12,14 @@
 \usepackage{xcolor}
 \usepackage[most]{tcolorbox}
 \usepackage{pifont}
+
 \definecolor{bleu}{HTML}{013c63}
 \newcommand{\starfull}{\textcolor{bleu}{\ding{72}}}
 \newcommand{\starempty}{\textcolor{bleu}{\ding{73}}}
 \newcommand{\starhalf}{\textcolor{bleu}{\ding{74}}}
-\newcommand{\cvtext}{\fontsize{8}{10}\selectfont}
-\newcommand{\cvtextsmall}{\fontsize{6}{8}\selectfont}
+\newcommand{\cvtext}{\fontsize{10}{12}\selectfont}
+\newcommand{\cvtextsmall}{\fontsize{7}{9}\selectfont}
+
 \tcbset{
   cvbox/.style={
     colframe=bleu,
@@ -31,12 +33,14 @@
     enhanced
   }
 }
-\titleformat{\section}{\Large\bfseries\color{bleu}}{}{0em}{}
-\titleformat{\subsection}{\bfseries\color{bleu}}{}{0em}{}
+
+\titleformat{\section}{\Large\bfseries\color{bleu}}{}{0em}{}[\vspace{-0.5em}]
+\titleformat{\subsection}{\bfseries\color{bleu}}{}{0em}{}[\vspace{-0.3em}]
 \pagestyle{empty}
+
 \hypersetup{
   pdfauthor={Victor Dauphin},
-  pdftitle={CV Victor Dauphin},
+  pdftitle={Resume Victor Dauphin - Java / Angular Fullstack Developer},
   pdfsubject={CV},
   pdfproducer={LaTeX},
   pdfcreator={pdflatex},
@@ -45,20 +49,22 @@
   linkcolor=bleu,
   citecolor=bleu
 }
+
 \begin{document}
 \noindent
-\begin{minipage}[t]{0.72\textwidth}
-  {\LARGE \textcolor{bleu}{\textbf{Technical Mentor - Fullstack Java / Angular Dev}}}\\[0.5em]
-  {\LARGE \textcolor{bleu}{\textbf{Victor Dauphin}}}\\[0.5em]
-  Metz • 37 years old • Driver's License B \\  
-  \href{mailto:victor.dauph@gmail.com}{victor.dauph@gmail.com} • +33 6 95 19 99 40 \\  
-  \href{https://github.com/VictorDauph}{GitHub} •  
-  \href{https://linkedin.com/in/victor-dauphin-83430840}{LinkedIn}\\
+\begin{minipage}[t]{0.72\textwidth}\raggedright
+  {\LARGE \textcolor{bleu}{\textbf{Victor Dauphin}}}\\[0.3em]
+  {\Large \textcolor{bleu}{\textbf{Java / Spring Boot / Angular Fullstack Developer}}}\\[0.5em]
+  Metz / Nancy / Strasbourg • Relocation \& Mobility: Luxembourg \& Greater Region \\
+  Driver's License \\
+  \href{mailto:victor.dauph@gmail.com}{victor.dauph@gmail.com} \\
+  +33 6 95 19 99 40 \\
+  \href{https://github.com/VictorDauph}{GitHub} • \href{https://linkedin.com/in/victor-dauphin-83430840}{LinkedIn}\\
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.25\textwidth}
   \begin{flushright}
-  \raisebox{-2.6cm}{
+  \raisebox{-2.4cm}{
     \begin{tikzpicture}
       \draw[fill=white, draw=bleu, line width=1pt] (0,0) circle (1.51cm);
       \clip (0,0) circle (1.5cm);
@@ -67,42 +73,35 @@
     }
   \end{flushright}
 \end{minipage}
-\vspace{1.5em}
+
+\vspace{0.8em}
 \noindent
 \begin{minipage}[t]{0.3\textwidth}
   \section*{Skills}
   \begin{tcolorbox}[cvbox, width=\linewidth]
-      \subsection*{Core stack}
+      \subsection*{Core Stack}
       {\normalsize
-      Java / Spring Boot \\
+      Java (v6 to v21) / Spring Boot \\
       Angular / TypeScript \\
-      PostgreSQL
-      } \\
-      \subsection*{Additional technologies}
-      {\normalsize
-      Node.js / Express / NestJS \\
-      Vue.js \\
-      MongoDB \\
-      NiFi \\
-      PHP / Dolibarr
-      } \\
+      PostgreSQL / REST APIs
+      } \\[0.5em]
+      
       \subsection*{DevOps \& Quality}
       {\normalsize
-      Docker \\
-      GitLab CI \\
-      Unit testing: JUnit \\
-      SonarQube / ESLint
-      } \\
-      \subsection*{Best practices}
+      Docker / GitLab CI \\
+      JUnit / SonarQube / ESLint \\
+      Clean Code / SOLID / CI/CD
+      } \\[0.5em]
+
+      \subsection*{Other Ecosystems}
       {\normalsize
-      Clean Code \\
-      SOLID \\
-      CI/CD \\
-      OWASP \\
-      WCAG \\
-      Git workflow
+      Node.js (Express / NestJS) \\
+      Vue.js \\
+      MongoDB / PL/SQL (Oracle) \\
+      Apache NiFi
       }
   \end{tcolorbox}
+
   \section*{Certifications}
   \begin{tcolorbox}[cvbox, width=\linewidth]
     \begin{itemize}[leftmargin=*]
@@ -111,82 +110,75 @@
       \item 2AIConcept Expert Trainer (2024)
     \end{itemize}
   \end{tcolorbox}
+
   \section*{Education}
   \begin{tcolorbox}[cvbox, width=\linewidth]
     \begin{itemize}[leftmargin=*]
       \item M2i \textit{POEI Fullstack Spring/Angular} (2022)
       \item OpenClassrooms \textit{Fullstack Node/React} (2021)
-      \item ENSGSI \textit{General Engineer} (2013)
+      \item ENSGSI \textit{Master's Degree in General Engineering} (2013)
     \end{itemize}
   \end{tcolorbox}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.68\textwidth}
 \section*{Profile}
-  Fullstack Java / Angular developer with 4 years of experience in corporate environments.  
-  I design robust applications with a focus on code quality, CI/CD and engineering best practices.  
-  I also support teams in project structuring and technical upskilling.\\
+Generalist Engineer (ENSGSI) and Fullstack Developer with 5 years of experience in enterprise environments (Atos, EDF, Agirc-Arrco). Java / Spring Boot and Angular specialist, combining technical training capabilities with software quality expertise (CI/CD, Clean Code, Testing). Available immediately.
+\vspace{0.8em}
 
 \section*{Professional Experience}
-  \begin{tcolorbox}[cvbox, width=\linewidth,fontupper=\cvtext]
-  \subsection*{Web Development Trainer -- freelance} \textit{Oct 2024 -- Present}
-  \begin{itemize}[leftmargin=*]
-    \item Trainer: Java new features (v6 to v21).
-    \item Trainer: Modern HTML5 and CSS3. development
-    \item Trainer: Angular: architecture, components, services, RxJS, Reactive Forms.
-    \item Trainer: Introduction to SQL/PostgreSQL.
-    \item Trainer: PL/SQL: stored procedures, functions, triggers in an Oracle database.
-    \item Development: non-profit showcase website using WordPress (La Boîte à Récup)
-    \item Development: feature development and debugging for an accounting application (Clémentine)
-  \end{itemize}
-  \subsection*{Freelance Developer -- Arterrien \textit{PHP / Dolibarr}} \textit{Apr 2025 -- Jun 2025}
-  \begin{itemize}[leftmargin=*]
-  \item Continuous improvement of a custom ERP module based on Dolibarr.
-  \item Integration of PHPStan (level 4) with custom stubs for the Dolibarr context.
-  \item Setup of a Dockerized CI/CD runner (Google Cloud VM + GitLab).
-  \item Implementation of unit tests with PHPUnit.
-  \end{itemize}
-  \subsection*{Trainer Certified Fullstack Developer \textit{Express / Angular}} \textit{Nov 2024 -- Apr 2025}
-  \begin{itemize}[leftmargin=*]
-    \item Intensive training for job seekers.
-    \item Hands-on projects: Angular, Express, MongoDB, SQL.
-    \item Docker, Git, CI/CD, automated testing.
-  \end{itemize}
-  \subsection*{Fullstack Developer -- Davidson \textit{Vue / NestJS}} \textit{Jun 2024 -- Sept 2024}
-  \begin{itemize}[leftmargin=*]
-    \item Refactored Vue Router, implemented todo/notifications modules.
-    \item Peer reviews, documentation, production deployment.
-  \end{itemize}
-  \subsection*{NiFi / Java Developer -- Atos / EDF \textit{NiFi / Java / VBA}} \textit{Sept 2023 -- Jun 2024}
-  \begin{itemize}[leftmargin=*]
-    \item Designed and developed data flows with Apache NiFi.
-    \item Created a custom NiFi processor in Java to meet specific business needs.
-    \item Automated tasks with Excel macros (VBA) and wrote tests with Unifier.
-  \end{itemize}
-  \subsection*{Fullstack Developer -- Atos / Agirc-Arrco / CEA \textit{Angular / Java SpringBoot}} \textit{Oct 2022 -- Jun 2023}
-  \begin{itemize}[leftmargin=*]
-    \item Developed user interfaces in Angular, integrated with REST APIs.
-    \item Designed backend services with Spring Boot and managed data with PostgreSQL.
-    \item Wrote unit tests with JUnit to ensure code reliability.
-    \item Involved in the entire project cycle: analysis, development, testing, and delivery in an agile environment.
-  \end{itemize}
+\begin{tcolorbox}[cvbox, width=\linewidth, fontupper=\cvtext]
+    \subsection*{--- SOFTWARE ENGINEERING \& DEVELOPMENT ---}
+    \vspace{0.3em}
+
+    \textcolor{bleu}{\textbf{Java / Angular Fullstack Developer}} \hfill \textit{October 2022 -- June 2023}\\
+    \textit{Atos (Key Accounts: Agirc-Arrco / CEA)}
+    \begin{itemize}[leftmargin=*]
+      \item Architecture and development of web applications: Angular frontend integrated with Spring Boot REST APIs.
+      \item Data modeling and query optimization using PostgreSQL.
+      \item Implementation of unit testing (JUnit) and integration into Agile (Scrum) delivery pipelines.
+    \end{itemize}
+    \vspace{0.8em}
+
+    \textcolor{bleu}{\textbf{Java Developer / Data Integration}} \hfill \textit{September 2023 -- June 2024}\\
+    \textit{Atos (Client: EDF) -- NiFi / Java}
+    \begin{itemize}[leftmargin=*]
+      \item Design and development of custom Java processors for Apache NiFi.
+      \item Automation and security enhancement of inter-application data flows.
+    \end{itemize}
+    \vspace{0.8em}
+
+    \textcolor{bleu}{\textbf{Fullstack Developer (Vue.js / NestJS)}} \hfill \textit{June 2024 -- September 2024}\\
+    \textit{Davidson}
+    \begin{itemize}[leftmargin=*]
+      \item Frontend architecture refactoring (Vue Router, todo/notification modules) and code reviews (Peer Review).
+    \end{itemize}
+
+    \vspace{0.4em}
+    \subsection*{--- TECHNICAL TRAINING \& CONSULTING ---}
+    \vspace{0.3em}
+
+    \textcolor{bleu}{\textbf{Technical Trainer \& Fullstack Mentor}} \hfill \textit{October 2024 -- Present}\\
+    \textit{Freelance \& Training Organizations}
+    \begin{itemize}[leftmargin=*]
+      \item \textbf{Java:} Delivered training modules covering advanced Java features (v6 to v21).
+      \item \textbf{Angular \& Web:} Modular architecture, components, services, RxJS, Reactive Forms.
+      \item \textbf{Databases \& DevOps:} SQL/PostgreSQL, advanced PL/SQL (Oracle: stored procedures, triggers), Docker, Git, CI/CD, and automated testing.
+    \end{itemize}
+    \vspace{0.8em}
+
+    \textcolor{bleu}{\textbf{Freelance Software Developer}} \hfill \textit{April 2025 -- June 2025}\\
+    \textit{Arterrien \& Independent Projects}
+    \begin{itemize}[leftmargin=*]
+      \item Ongoing maintenance of an ERP module (PHP/Dolibarr), PHPStan integration (level 4), Dockerized CI/CD runner on GCP, and PHPUnit testing.
+      \item Custom feature development and integration for web applications (Clémentine, La Boîte à Récup).
+    \end{itemize}
 \end{tcolorbox}
 
-\section*{Other Professional Experience}
-\begin{tcolorbox}[cvbox, width=\linewidth,fontupper=\cvtextsmall]
-  \begin{itemize}[leftmargin=*]
-    \item \textbf{Freelance Trainer} – Interpersonal Communication (2018–2020)  
-    Led dynamic training sessions based on improvisational theater.
-
-    \item \textbf{Project Manager} – Sustainable Logistics (2017–2018)  
-    Promoted eco-friendly solutions within a logistics cluster.
-
-    \item \textbf{Project Leader} – Medical Logistics (2016–2017)  
-    Coordinated teams and managed workflows for clinical research.
-
-    \item \textbf{Co-founder} – Digital Startup (2013–2015)  
-    Product development, team management, business strategy.
-  \end{itemize}
+\section*{Other Experience}
+\begin{tcolorbox}[cvbox, width=\linewidth, fontupper=\cvtext]
+  \textbf{2013 -- 2020 (7 years):} Cross-functional background in logistics project management (medical \& sustainable logistics), entrepreneurship (startup co-founder), and interpersonal communication training.
 \end{tcolorbox}
+
 \end{minipage}
 \end{document}
