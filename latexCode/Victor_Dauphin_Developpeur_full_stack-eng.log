@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.2)  8 OCT 2026 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.2)  9 OCT 2026 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -722,12 +722,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 117--118
-[]\T1/cmr/m/n/10 M2i \T1/cmr/m/it/10 POEI Full-stack
+[]\T1/cmr/m/n/10 M2i \T1/cmr/m/it/10 In-ten-sive Full-stack
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+\T1/cmr/m/it/10 Spring/An-gu-lar Boot-Camp
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 118--119
 []\T1/cmr/m/n/10 OpenClassrooms \T1/cmr/m/it/10 Full-stack
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+\T1/cmr/m/it/10 Node/Re-act Cer-ti-fi-ca-tion
  []
 
 
@@ -748,18 +758,18 @@ Package rerunfilecheck Info: File `Victor_Dauphin_Developpeur_full_stack-eng.out
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28614 strings out of 473190
- 573222 string characters out of 5719980
- 1016004 words of memory out of 5000000
- 51405 multiletter control sequences out of 15000+600000
- 565175 words of font info for 46 fonts, out of 8000000 for 9000
+ 28620 strings out of 473190
+ 573253 string characters out of 5719980
+ 1018027 words of memory out of 5000000
+ 51407 multiletter control sequences out of 15000+600000
+ 567739 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,10n,98p,1307b,984s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on Victor_Dauphin_Developpeur_full_stack-eng.pdf (1 page, 169432 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on Victor_Dauphin_Developpeur_full_stack-eng.pdf (1 page, 238561 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
